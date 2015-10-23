@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>University of Florida College of Engineering</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<style type="text/css">
+		/* style rules */
+		a:link {
+			text-decoration:none;
+		}
+		a:hover, a:active {
+			text-decoration:underline;
+		}
+		img {
+			height:auto;
+		}
+		p {
+			margin-top:0px;
+		}
+		p.MsoNormal {
+			margin: 0px
+		}
+		td {
+			padding:0;
+		}
+		.container-table {
+			width: 600px; 
+			border-collapse:collapse;
+		}
+		.preheader {
+			padding: 18px 18px 9px 18px;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:9px; 
+			text-transform:uppercase;
+		}
+		.title {
+			padding: 9px 18px 9px 18px;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:14px; 
+			font-weight: bold;
+			letter-spacing: 2px;
+			text-transform:uppercase;
+			color:#FFFFFF;
+		}
+		.content-container {
+			padding: 18px 18px 18px 18px;
+		}
+		.header-image {
+			display:block;
+			margin:0;
+			padding:0;
+			border:0;
+			max-width: 600px;
+			vertical-align: bottom;
+			outline: none;
+			text-decoration: none;
+		}
+		.photo-credit {
+			padding: 9px 18px 9px 18px;
+			color:#909090;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size:10px; 
+			line-height:12px;
+			letter-spacing: 1px;
+			text-transform:uppercase;
+		}
+		.header1 {
+			padding:9px 12px;
+			color:#316396;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size:24px; 
+			font-weight: 800;
+			letter-spacing: 2px;
+			text-transform:uppercase;
+			border:2px solid #316396;
+			
+		}
+		.header2 {
+			padding: 5px 0px;
+			color:#184079;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:20px; 
+			line-height:26px;
+		}
+		.header3 {
+			padding:27px 0 18px 0;
+			color:#909090;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size:11px; 
+			line-height:12px;
+			font-weight:900;
+			letter-spacing: 2px;
+			text-transform:uppercase;
+			text-align:center;
+		}
+		.header3 span {
+			border:2px solid #909090;
+			padding: 6px 12px;
+		}
+		.caption {
+			color: #184079;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size:24px; 
+			line-height:28px;
+			font-style: italic;
+			max-width: 240px;
+		}
+		.content {
+			padding: 5px 0px;
+			font-family: Helvetica, Arial, sans-serif; 
+			font-size:14px;
+			line-height:20px;
+			color:#606060;	
+		}
+		.content a:link, .content a:active, .content a:visited {
+			color:#E86B25;
+		}
+		.content-small {
+			font-size:14px;
+			line-height:18px;
+		}
+		.column-content {
+			width:265px;
+		}
+		.column-image {
+			display:block;
+			margin-bottom:6px;
+			max-width:260px;
+		}
+		.button {
+			font-size: 24px;
+			font-family: Helvetica, Arial, sans-serif; 
+			font-weight: 700;
+			letter-spacing: 1.5px;
+			text-transform:uppercase;
+			color: #ffffff; 
+			text-decoration: none; 
+			border-radius: 5px; 
+			-webkit-border-radius: 5px; 
+			-moz-border-radius: 5px; 
+			background-color: #EB7035; 
+			border-top: 16px solid #EB7035; 
+			border-bottom: 16px solid #EB7035; 
+			border-right: 18px solid #EB7035; 
+			border-left: 18px solid #EB7035; 
+			display: inline-block;
+		}
+		.footer {
+			padding: 18px 18px 9px 18px; 
+			background-color: #FFFFFF;
+		}
+		.footer-content {
+			color:#184079;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size:10px; 
+			line-height:12px;
+			letter-spacing: 0.5px;
+			text-transform:uppercase;
+		}
+		.footer-content a:link, .footer-content a:visited {
+			color:#E86B25;
+		}
+		.postfooter {
+			padding: 0;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:9px; 
+		}
+		/* media queries */
+		@media only screen and (min-width: 601px) { /* Outlook and Apple Mail */
+			.content {width: 600px !important;}
+		}
+
+		 @media only screen and (max-width: 480px){ 
+		 	a {
+		 		padding:6px 0px;
+		 	}
+		 	.container-table {
+		 		max-width: 600px !important;
+		 		width:100% !important;
+			}
+			.preheader {
+				text-align: center;
+			}
+		 	.content {
+		 		max-width:600px !important;
+				width:100% !important;
+				font-size:16px;
+				line-height:20px;
+				padding-right:0 !important;
+		 	}
+		 	.content-small {
+				font-size:12px;
+				line-height:18px;
+			}
+		 	.column-content {
+				max-width:480px !important;
+/*				padding-right:20px !important;
+*/				width:100% !important;
+			}
+			.column-image {
+				max-width: 440px !important;
+				width:100%;
+			}
+		 	.header-image {
+		 		height:auto !important;
+				max-width:600px !important;
+				width:100% !important;
+		 	}
+		 	.footer-content {
+		 		font-size:20px;
+		 		line-height:24px;
+		 		text-align: center;
+		 	} 
+		 	.footer-content a {
+		 		display:block;
+		 	}
+		 }
+
+	</style>
+</head> 
+<body bgcolor="#d5d5d5" style="margin:0; padding:0;">	
+	<table border="0" width="100%" cellpadding="0" cellspacing="0">
+		<tr>
+			<td bgcolor="#d5d5d5">
+				<table border="0" align="center" cellpadding="0" cellspacing="0" class="container-table">
+					<tr>
+						<td class="preheader" bgcolor="#d5d5d5" align="right">
+							<a href="http://www.eng.ufl.edu/eblasts/summit2015/summit2.html" style="color:#909090;">View this email in your browser &raquo;</a>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#FFFFFF" style="font-family:Helvetica, Arial, sans-serif;">
+							<a href="http://www.eng.ufl.edu" title="University of Florida College of Engineering" target="_blank"><img src="http://www.eng.ufl.edu/eblasts/summit2015/coe-summit-email-header.png" width="600" height="75" align="left" class="header-image" alt="University of Florida College of Engineering" /></a>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#FFFFFF" style="font-family:Helvetica, Arial, sans-serif;">
+							<a href="http://www.eng.ufl.edu/summit2015/" title="University of Florida College of Engineering" target="_blank"><img src="http://www.eng.ufl.edu/eblasts/summit2015/summit-email-header.png" width="600" height="324" align="left" class="header-image" alt="University of Florida College of Engineering" /></a>
+						</td>
+					</tr>
+					<tr>
+						<td class="content-container" bgcolor="#FFFFFF">
+							<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+								<tr>
+									<td class="header1" align="center">
+										Registration is Open!
+									</td>
+								</tr>
+								<tr>
+									<td class="content" align="center">
+										<p>At this year’s summit, the Engineering Leadership Institute will host discussions on the role of women and diversity in leadership.</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td align="center">
+													<table border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td align="center">
+																<a href="http://www.eng.ufl.edu/summit2015/summit-registration/" target="_blank" class="button">Register</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="content" style="padding-top:20px;">
+										<hr color="#316396" noshade />
+									</td>
+								</tr>
+								<tr>
+									<td class="header3">
+										<span>Keynote Speaker</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="content">
+										<p><span class="header2"><img src="http://www.eng.ufl.edu/eblasts/summit2015/kim-stevenson.png" width="120" height="115" align="left" border="0" alt="Kim Stevenson" />Kim Stevenson<br />
+										Corporate Vice President and CIO, Intel Corporation</span><br />
+										As CIO of Intel, Stevenson leads a diverse team of technologists&mdash;over 6,000 worldwide&mdash;within a company that is known for being the paragon of technology innovation. Since she took the position, her use of big data analytics has sped up product supply and improved employee productivity.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="header3">
+										<span>Panel Discussions/Q&amp;A</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="header2" align="center">
+										Leadership in Academia
+									</td>
+								</tr>
+								<tr>
+									<td class="content" align="center">
+										Panelists: Kim Stevenson, Intel; Kathy Banks, Texas A&amp;M University; Bill McElroy, University of Florida; Michele Manuel, University of Florida
+									</td>
+								</tr>
+								<tr>
+									<td class="header2" align="center">
+										Leadership in a Global Market
+									</td>
+								</tr>
+								<tr>
+									<td class="content" align="center">
+										Panelists: Marie Tillman, Pat Tillman Foundation; Morgan Harding, University of Florida; James Schumacher, Kimberly-Clark Professional; Penelope Herrera, Harris Corporation
+									</td>
+								</tr>
+								<tr>
+									<td class="header2" align="center">
+										Leadership in the Workplace
+									</td>
+								</tr>
+								<tr>
+									<td class="content" align="center">
+										Panelists: Brigadier General Maureen LeBoeuf, Ed.D., Army (retired); Mimi Drew, NRDA; James Perkins, General Electric; Abdul Salvador, Georgia Pacific; Andrea Swinicki, Proctor &amp; Gamble
+									</td>
+								</tr>
+								<tr>
+									<td class="header3">
+										<span>Speakers</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="content">
+										<p><span class="header2"><img src="http://www.eng.ufl.edu/eblasts/summit2015/linda-hudson.png" width="120" height="115" align="left" border="0" alt="Linda Hudson" />Linda Hudson<br />
+										CEO, The Cardea Group</span><br />
+										(BS SE ’72) Distinguished as the first female CEO in the defense industry, Hudson ran the global aerospace company BAE Systems after a long string of leadership positions at Harris Corporation, Ford Aerospace, Martin Marietta, and General Dynamics.</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="content">
+										<p><span class="header2"><img src="http://www.eng.ufl.edu/eblasts/summit2015/maureen-leboeuf.png" width="120" height="115" align="left" border="0" alt="Brigadier General Maureen LeBoeuf" />Brigadier General<br />
+										Maureen LeBoeuf, Ed.D.</span><br />
+										A retired helicopter pilot, LeBoeuf became the first woman to run a department&mdash;the Department of Physical Education&mdash;at the United States Military Academy at West Point. Her position carried the unique title “Master of the Sword.”</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="content">
+										<p><span class="header2"><img src="http://www.eng.ufl.edu/eblasts/summit2015/marie-tillman.png" width="120" height="115" align="left" border="0" alt="Marie Tillman" />Marie Tillman<br />
+										President, Pat Tillman Foundation</span><br />
+										After her husband died in Afghanistan, Tillman created a foundation that in the last 10 years has invested more than $10M into educational support for people committed to service.</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="header3">
+										<span>Events</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="header2" align="center">
+										Keynote Luncheon
+									</td>
+								</tr>
+								<tr>
+									<td class="content" align="center">
+										&ldquo;Characteristics of Effective Leaders&rdquo;<br />
+									 	Linda Hudson, CEO, The Cardea Group<br />
+									 	<em>Limited seating available</em>
+									</td>
+								</tr>
+								<tr>
+									<td class="header2" align="center">
+										Leadership &amp; Scholarship Awards
+									</td>
+								</tr>
+								<tr>
+									<td class="content" align="center">
+									 	Presented by Cammy Abernathy, Dean, College of Engineering
+									</td>
+								</tr>
+								<tr>
+									<td class="header2" align="center">
+										Gator Engineering Reception
+									</td>
+								</tr>
+								<tr>
+									<td class="content" align="center">
+									 	With keynote speakers, alumni, panelists and student leaders
+									</td>
+								</tr>
+								<tr>
+									<td class="header3">
+										<span>Sponsors</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table border="0" cellpadding="0" cellspacing="0" align="left" class="column-content">
+											<tr>
+												<td class="content" valign="top" style="padding-right:20px;">
+													<a href="http://www.areva.com/" title="AREVA Inc." target="_blank"><img src="http://www.eng.ufl.edu/eblasts/summit2015/logo-areva.png" title="AREVA Inc." alt="AREVA Inc." width="260" height="124" class="column-image" /></a>
+												</td>
+											</tr>
+										</table>
+										<table border="0" cellpadding="0" cellspacing="0" align="right" class="column-content">
+											<tr>
+												<td class="content" valign="top">
+													<a href="http://www.cardeagroup.com/" title="The Cardea Group" target="_blank"><img src="http://www.eng.ufl.edu/eblasts/summit2015/logo-cardeagroup.png" title="The Cardea Group" alt="The Cardea Group" width="260" height="124" class="column-image" /></a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td align="center">
+													<table border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td align="center" style="padding-top:30px;">
+																<a href="http://www.eng.ufl.edu/summit2015/summit-registration/" target="_blank" class="button">Register</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="footer" bgcolor="#FFFFFF" align="center">
+							<table border="0" width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td class="footer-content" align="center">
+										<hr size="3" color="#184079" noshade />
+										<span style="font-size:20px; line-height:40px;">We are <a href="http://www.eng.ufl.edu/powering/" style="border:1px solid #e86b25; padding:3px 5px 1px 5px;">Powering the New Engineer.</a></span><br />
+										<a href="https://www.facebook.com/gatorengineering">Facebook</a> &bull; <a href="https://twitter.com/floridaengineer">Twitter</a> &bull; <a href="https://www.youtube.com/user/gatorengineering">YouTube</a> &bull; <a href="http://www.linkedin.com/in/gatorengineering">LinkedIn</a> &bull; <a href="http://www.ufengineering.skorfanshop.com/">Online Store</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="postfooter" bgcolor="#d5d5d5" align="center">
+							<a href="http://www.eng.ufl.edu" title="University of Florida College of Engineering" target="_blank"><img src="http://www.eng.ufl.edu/eblasts/summit2015/coe-email-logo.png" width="250" height="100" border="0" alt="University of Florida College of Engineering" /></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
