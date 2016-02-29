@@ -51,7 +51,7 @@
 			text-decoration: none;
 		}
 		.header1 {
-			padding:9px 14px 9px 14px;
+			/*padding:9px 14px 9px 14px;
 			border:5px solid #d5d5d5;
 			background-color:#fA4616;
 			color:#ffffff;
@@ -61,14 +61,14 @@
 			line-height:28px;
 			font-style:normal;
 			font-size:20px;
-			font-weight: 800;
+			font-weight: 800;*/
 		}
 		.header2 {
 			padding: 9px 0px 9px 0px;
 			color:#00529b;
 			font-family:Helvetica, Arial, sans-serif;
-			font-size:20px; 
-			line-height:26px;
+			font-size:28px; 
+			line-height:32px;
 		}
 		.header3 {
 			padding:27px 0 18px 0;
@@ -87,11 +87,11 @@
 			display:inline-block;
 		}
 		.lead {
-			padding: 9px 0px 0px;
+			padding: 9px 0px;
 			font-family: Helvetica, Arial, sans-serif; 
 			font-size:14px;
 			line-height:24px;
-			color:#7F7F7F;	
+			color:#666666;	
 			font-style:italic;
 		}
 		.content {
@@ -104,6 +104,21 @@
 		.content a:link, .content a:active, .content a:visited,
 		.header2 a:link, .header2 a:active, .header2 a:visited {
 			color:#fA4616;
+		}
+		.left-thirds {
+			width:354px;
+		}
+		.right-third {
+			width: 186px;
+			color:#FFFFFF;	
+		}
+		.tintblock {
+			padding: 9px;
+			background-color: #4c87b5;
+			font-family: Helvetica, Arial, sans-serif; 
+			font-size:14px;
+			line-height:24px;
+			color: #ffffff !important;
 		}
 		.column-content {
 			width:265px;
@@ -122,9 +137,6 @@
 			text-transform:uppercase;
 			color: #ffffff; 
 			text-decoration: none; 
-			border-radius: 5px; 
-			-webkit-border-radius: 5px; 
-			-moz-border-radius: 5px; 
 			background-color: #fA4616; 
 			border-top: 16px solid #fA4616; 
 			border-bottom: 16px solid #fA4616; 
@@ -176,10 +188,10 @@
 				padding-right:0 !important;
 		 	}
 		 	.header2 {
-		 		font-size:16px;
-		 		line-height:22px;
+		 		font-size:24px;
+		 		line-height:30px;
 		 	}
-		 	.column-content {
+		 	.column-content, .left-thirds, .right-third {
 				max-width:480px !important;
 				width:100% !important;
 			}
@@ -215,13 +227,8 @@
 						</td>
 					</tr>
 					<tr>
-						<td bgcolor="#FFFFFF">
-							<a href="https://www.eng.ufl.edu" title="Herbert Wertheim College of Engineering" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/hwcoe-email-header-official-flat.png" width="600" height="108" align="left" class="header-image" alt="Herbert Wertheim College of Engineering" /></a>
-						</td>
-					</tr>
-					<tr>
 						<td>
-							<a href="https://www.eng.ufl.edu/transformation/" title="Powering the New Engineer to Transform the Future" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/external/201510/images/header-img-201510.png" align="left" alt="Powering the New Engineer to Transform the Future" width="600" height="338" class="header-image" /></a>
+							<a href="http://www.ise.ufl.edu/oem/" title="OEM class site: the UF Research &amp; Academic Center in Lake Nona&raquo;s Medical City" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/oem/images/oemp-header.png" align="left" alt="OEM class site: the UF Research &amp; Academic Center in Lake Nona&raquo;s Medical City" width="600" height="388" class="header-image" /></a>
 						</td>
 					</tr>
 					<tr>
@@ -229,35 +236,36 @@
 							<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
 							<!-- to left-align content, remove align="center" from every td that contains content -->
 								<tr>
-									<td class="header1" align="center">
-										This is header text which may extend for two or more lines if it gets long enough
+									<td class="lead">
+										Interested in getting a master’s in Engineering Management from UF?  The University of Florida Outreach Engineering Management Program includes graduate engineering and MBA classes, and is designed for working professionals like you. 
 									</td>
 								</tr>
 								<tr>
-									<td class="lead" align="center">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
+									<td>
+										<table border="0" cellpadding="0" cellspacing="0" align="left" class="left-thirds">
+											<tr>
+												<td class="content" valign="top" style="padding-right:10px;">
+												<p>UF's Outreach Engineering Management Program provides technically degreed students the opportunity to obtain an engineering master's from a highly ranked university, without experiencing a career interruption. The infrequency of class meetings makes it possible for out-of-state students to participate, and provides an excellent alternative to an online degree program.</p>
+												<p>Fellow students have outstanding academic qualifications and represent top-notch employers. Experience lively classroom discussions, team collaborations, and networking opportunities. Many employers will pay a portion of the course fees.</p>
+												<p>OEM awards a Master of Science in Industrial &amp; Systems Engineering (Engineering Management track).  The blended curriculum applies to a broad range of disciplines and industries, and thus benefits technical professionals with almost any engineering or STEM background.  </p>
+												</td>
+											</tr>
+										</table>
+										<table border="0" cellpadding="0" cellspacing="0" align="right" class="right-third">
+											<tr>
+												<td class="tintblock" valign="top" style="padding-right:20px;">
+													&bull; All instruction is face to face, with classes in Orlando one weekend per month.<br />
+													&bull; Curriculum includes five engineering courses and five MBA courses, and takes 20 months to complete.<br />
+													&bull; Get an MBA by adding 12 more months of study.
+												</td>
+											</tr>
+										</table>
 									</td>
 								</tr>
-								<tr>
-									<td class="content" align="center">
-									<p>Lorem ipsum dolor sit amet, <a href="https://www.eng.ufl.edu/">consectetur adipiscing elit</a>. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
-									</td>
-								</tr>
-								<tr>
-									<td class="content" align="center">
-										<hr size="5" color="#d5d5d5" noshade />
-									</td>
-								</tr>
+								
 								<tr>
 									<td class="header2" align="center">
-										This is level 2 header text which may extend for two or more lines if it gets long enough
-									</td>
-								</tr>
-								<tr>
-									<td class="content" align="center">
-									<p>Lorem ipsum dolor sit amet, <a href="https://www.eng.ufl.edu/">consectetur adipiscing elit</a>. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
+										Information sessions and open houses are available throughout Florida and online.
 									</td>
 								</tr>
 								<tr>
@@ -268,10 +276,28 @@
 													<table border="0" cellspacing="0" cellpadding="0">
 														<tr>
 															<td align="center" style="padding-top:10px;">
-																<a href="#" target="_blank" class="button">Call to Action</a>
+																<a href="http://www.ise.ufl.edu/oemp/isu/" target="_blank" class="button">RSVP Today</a>
 															</td>
 														</tr>
 													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table border="0" cellpadding="0" cellspacing="0" align="left" class="column-content">
+											<tr>
+												<td class="header3" valign="top" style="padding-right:20px;">
+													<span>Next program starts Aug. 20, 2016</span>
+												</td>
+											</tr>
+										</table>
+										<table border="0" cellpadding="0" cellspacing="0" align="right" class="column-content">
+											<tr>
+												<td class="header3" valign="top">
+													<span>Application deadline: March 30, 2016</span>
 												</td>
 											</tr>
 										</table>
@@ -303,8 +329,7 @@
 							<table border="0" width="100%" cellpadding="0" cellspacing="0">
 								<tr>
 									<td class="footer-content" align="center">
-										<a href="https://www.facebook.com/gatorengineering">Facebook</a> &bull; <a href="https://twitter.com/floridaengineer">Twitter</a> &bull; <a href="https://www.youtube.com/user/gatorengineering">YouTube</a> &bull; <a href="https://www.linkedin.com/grp/home?gid=8412066">LinkedIn</a> &bull; <a href="http://www.ufengineering.skorfanshop.com/">Online Store</a><br />
-										<a href="mailto:tcocherell@eng.ufl.edu">Email to be removed from this list</a>
+										<a href="http://www.ise.ufl.edu/oem">www.ise.ufl.edu/oem</a> &bull; <a href="mailto:oemprogram@ise.ufl.edu">oemprogram@ise.ufl.edu</a> &bull; 352-3920-0928<br />303 Weil Hall, Gainesville, FL 32611
 									</td>
 								</tr>
 							</table>
