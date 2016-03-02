@@ -51,25 +51,24 @@
 			text-decoration: none;
 		}
 		.header1 {
-			padding:9px 14px 9px 14px;
+			/*padding:9px 14px 9px 14px;
 			border:5px solid #d5d5d5;
-		/*	background-color:#ff4a00;
+			background-color:#fA4616;
 			color:#ffffff;
-		*/	color:#ff4a00;
 			font-family: Helvetica, Arial, sans-serif;
 			letter-spacing: 1.5px;
 			text-transform:uppercase;
 			line-height:28px;
 			font-style:normal;
 			font-size:20px;
-			font-weight: 800;
+			font-weight: 800;*/
 		}
 		.header2 {
 			padding: 9px 0px 9px 0px;
 			color:#00529b;
 			font-family:Helvetica, Arial, sans-serif;
-			font-size:20px; 
-			line-height:26px;
+			font-size:28px; 
+			line-height:32px;
 		}
 		.header3 {
 			padding:27px 0 18px 0;
@@ -87,6 +86,14 @@
 			padding: 9px 14px;
 			display:inline-block;
 		}
+		.lead {
+			padding: 9px 0px;
+			font-family: Helvetica, Arial, sans-serif; 
+			font-size:14px;
+			line-height:24px;
+			color:#666666;	
+			font-style:italic;
+		}
 		.content {
 			padding: 9px 0px;
 			font-family: Helvetica, Arial, sans-serif; 
@@ -96,7 +103,22 @@
 		}
 		.content a:link, .content a:active, .content a:visited,
 		.header2 a:link, .header2 a:active, .header2 a:visited {
-			color:#ff4a00;
+			color:#fA4616;
+		}
+		.left-thirds {
+			width:354px;
+		}
+		.right-third {
+			width: 186px;
+			color:#FFFFFF;	
+		}
+		.tintblock {
+			padding: 9px;
+			background-color: #4c87b5;
+			font-family: Helvetica, Arial, sans-serif; 
+			font-size:14px;
+			line-height:24px;
+			color: #ffffff !important;
 		}
 		.column-content {
 			width:265px;
@@ -115,14 +137,11 @@
 			text-transform:uppercase;
 			color: #ffffff; 
 			text-decoration: none; 
-			border-radius: 5px; 
-			-webkit-border-radius: 5px; 
-			-moz-border-radius: 5px; 
-			background-color: #ff4a00; 
-			border-top: 16px solid #ff4a00; 
-			border-bottom: 16px solid #ff4a00; 
-			border-right: 18px solid #ff4a00; 
-			border-left: 18px solid #ff4a00; 
+			background-color: #fA4616; 
+			border-top: 16px solid #fA4616; 
+			border-bottom: 16px solid #fA4616; 
+			border-right: 18px solid #fA4616; 
+			border-left: 18px solid #fA4616; 
 			display: inline-block;
 		}
 		.footer {
@@ -138,7 +157,7 @@
 			text-transform:uppercase;
 		}
 		.footer-content a:link, .footer-content a:visited {
-			color:#ff4a00;
+			color:#fA4616;
 		}
 		.postfooter {
 			padding: 0;
@@ -169,10 +188,10 @@
 				padding-right:0 !important;
 		 	}
 		 	.header2 {
-		 		font-size:16px;
-		 		line-height:22px;
+		 		font-size:24px;
+		 		line-height:30px;
 		 	}
-		 	.column-content {
+		 	.column-content, .left-thirds, .right-third {
 				max-width:480px !important;
 				width:100% !important;
 			}
@@ -204,62 +223,89 @@
 				<table border="0" align="center" cellpadding="0" cellspacing="0" class="container-table">
 					<tr>
 						<td class="preheader" bgcolor="#d5d5d5" align="right">
-							<a href="https://www.eng.ufl.edu/eblasts/manuel/pecase.html" style="color:#7F7F7F;">View this email in your browser &raquo;</a>
-						</td>
-					</tr>
-					<tr>
-						<td bgcolor="#FFFFFF">
-							<a href="https://www.eng.ufl.edu" title="Herbert Wertheim College of Engineering" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/hwcoe-email-header-official-flat.png" width="600" height="108" align="left" class="header-image" alt="Herbert Wertheim College of Engineering" /></a>
+							<a href="#" style="color:#7F7F7F;">View this email in your browser &raquo;</a>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<a href="http://news.ufl.edu/articles/2016/02/president-obama-honors-extraordinary-early-career-scientists.php" title="UF associate professor Michele Manuel receives PECASE award" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/manuel/images/manuel-header.png" align="left" alt="UF associate professor Michele Manuel receives PECASE award" width="600" height="242" class="header-image" /></a>
+							<a href="http://www.ise.ufl.edu/oem/" title="OEM class site: the UF Research &amp; Academic Center in Lake Nona&raquo;s Medical City" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/oem/images/oemp-header.png" align="left" alt="OEM class site: the UF Research &amp; Academic Center in Lake Nona&raquo;s Medical City" width="600" height="388" class="header-image" /></a>
 						</td>
 					</tr>
 					<tr>
 						<td class="content-container" bgcolor="#FFFFFF">
 							<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+							<!-- to left-align content, remove align="center" from every td that contains content -->
 								<tr>
-									<td class="content">
-										<p><strong>Michele Manuel, an associate professor in the <a href="http://www.mse.ufl.edu/">Department of Materials Science and Engineering</a> (MSE) in UF&rsquo;s Herbert Wertheim College of Engineering,</strong><br /> was named by President Obama on Thursday as a recipient of the Presidential Early Career Awards for Scientists and Engineers, the highest honor bestowed by the United States Government on science and engineering professionals in the early stages of their independent research careers. Manuel is also the recipient of the NSF CAREER, NASA Early Career Faculty, ASM Bradley Stoughton Award for Young Teachers, AVS Recognition for Excellence in Leadership, TMS Early Career Faculty, TMS Young Leaders Professional Development, and TMS/JIM International Scholar awards.</p>
-										
+									<td class="lead">
+										Interested in getting a master’s in Engineering Management from UF?  The University of Florida Outreach Engineering Management Program includes graduate engineering and MBA classes, and is designed for working professionals like you. 
 									</td>
 								</tr>
 								<tr>
-									<td class="content" align="center">
-										<hr size="5" color="#d5d5d5" noshade />
+									<td>
+										<table border="0" cellpadding="0" cellspacing="0" align="left" class="left-thirds">
+											<tr>
+												<td class="content" valign="top" style="padding-right:10px;">
+												<p>UF's Outreach Engineering Management Program provides technically degreed students the opportunity to obtain an engineering master's from a highly ranked university, without experiencing a career interruption. The infrequency of class meetings makes it possible for out-of-state students to participate, and provides an excellent alternative to an online degree program.</p>
+												<p>Fellow students have outstanding academic qualifications and represent top-notch employers. Experience lively classroom discussions, team collaborations, and networking opportunities. Many employers will pay a portion of the course fees.</p>
+												<p>OEM awards a Master of Science in Industrial &amp; Systems Engineering (Engineering Management track).  The blended curriculum applies to a broad range of disciplines and industries, and thus benefits technical professionals with almost any engineering or STEM background.  </p>
+												</td>
+											</tr>
+										</table>
+										<table border="0" cellpadding="0" cellspacing="0" align="right" class="right-third">
+											<tr>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td class="tintblock" valign="top" style="padding-right:20px;">
+													&bull; All instruction is face to face, with classes in Orlando one weekend per month.<br />
+													&bull; Curriculum includes five engineering courses and five MBA courses, and takes 20 months to complete.<br />
+													&bull; Get an MBA by adding 12 more months of study.
+												</td>
+											</tr>
+										</table>
 									</td>
 								</tr>
+								
 								<tr>
 									<td class="header2" align="center">
-										&ldquo;Michele is a visionary. Her extremely creative approach to research has distinguished her as an up-and-coming leader. She is a perfect example of what we refer to as the &rsquo;New Engineer,&lsquo; one who leads innovation across disciplines. She is an inspiration for the next generation of engineers that we are preparing at the college. We’re as proud and excited as ever to support her research here at UF.&rdquo;<br />&ndash;Engineering dean Cammy Abernathy
+										Information sessions and open houses are available throughout Florida and online.
 									</td>
 								</tr>
 								<tr>
-									<td class="content" align="center">
-										<hr size="5" color="#d5d5d5" noshade />
+									<td>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td align="center">
+													<table border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td align="center" style="padding-top:10px;">
+																<a href="http://www.ise.ufl.edu/oemp/isu/" target="_blank" class="button">RSVP Today</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
 									</td>
 								</tr>
 								<tr>
-									<td class="content">
-										<p><img src="https://www.eng.ufl.edu/eblasts/manuel/images/manuel-portrait.png" width="230" height="288" align="left" class="header-image" alt="Michele Manuel" /> Manuel&rsquo;s research uses a systems-based materials design approach that couples experimental research with theory and mechanistic modeling for the accelerated development of materials. Her current research is focused on the use of systems-level design methods to advance the development of new metallic alloys through microstructure optimization. Of specific interest are lightweight alloys, self-healing metals, shape memory alloys, and materials in extreme environments &ndash; specifically under high magnetic fields or under irradiation. Her work has impact in a wide array of applications including improved performance of biomedical implants and more fuel efficient automobiles.</p>
+									<td>
+										<table border="0" cellpadding="0" cellspacing="0" align="left" class="column-content">
+											<tr>
+												<td class="header3" valign="top" style="padding-right:20px;">
+													<span>Next program starts Aug. 20, 2016</span>
+												</td>
+											</tr>
+										</table>
+										<table border="0" cellpadding="0" cellspacing="0" align="right" class="column-content">
+											<tr>
+												<td class="header3" valign="top">
+													<span>Application deadline: March 30, 2016</span>
+												</td>
+											</tr>
+										</table>
 									</td>
 								</tr>
-							
-								<tr>
-									<td class="content">
-										<p>Manuel received her bachelor&rsquo;s degree in materials science and engineering at the University of Florida and a Ph.D. in materials science and engineering at Northwestern University. She worked for the <a href="http://www.nasa.gov/">National Aeronautics and Space Administration (NASA)</a> and <a href="http://www.gm.com/">General Motors Corporation (GM)</a> before joining the faculty in the MSE Department at the University of Florida in January 2008.</p>
-										<p>See the full press release and list of recipients at <a href="https://www.whitehouse.gov/the-press-office/2016/02/18/president-obama-honors-extraordinary-early-career-scientists">whitehouse.gov</a>.</p>
-									</td>
-								</tr>
-								<tr>
-									<td class="content" align="center">
-										<hr size="5" color="#d5d5d5" noshade />
-									</td>
-								</tr>
-							
-								
 							</table>
 						</td>
 					</tr>
@@ -286,8 +332,7 @@
 							<table border="0" width="100%" cellpadding="0" cellspacing="0">
 								<tr>
 									<td class="footer-content" align="center">
-										<a href="https://www.facebook.com/gatorengineering">Facebook</a> &bull; <a href="https://twitter.com/floridaengineer">Twitter</a> &bull; <a href="https://www.youtube.com/user/gatorengineering">YouTube</a> &bull; <a href="https://www.linkedin.com/grp/home?gid=8412066">LinkedIn</a> &bull; <a href="http://www.ufengineering.skorfanshop.com/">Online Store</a><br />
-										<a href="mailto:tcocherell@eng.ufl.edu">Email to be removed from this list</a>
+										<a href="http://www.ise.ufl.edu/oem">www.ise.ufl.edu/oem</a> &bull; <a href="mailto:oemprogram@ise.ufl.edu">oemprogram@ise.ufl.edu</a> &bull; 352-3920-0928<br />303 Weil Hall, Gainesville, FL 32611
 									</td>
 								</tr>
 							</table>

@@ -37,6 +37,15 @@
 			font-size:9px; 
 			text-transform:uppercase;
 		}
+		.title {
+			padding: 9px 18px 9px 18px;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:14px; 
+			font-weight: bold;
+			letter-spacing: 2px;
+			text-transform:uppercase;
+			color:#FFFFFF;
+		}
 		.content-container {
 			padding: 18px 18px 18px 18px;
 		}
@@ -50,26 +59,28 @@
 			outline: none;
 			text-decoration: none;
 		}
-		.header1 {
-			padding:9px 14px 9px 14px;
-			border:5px solid #d5d5d5;
-		/*	background-color:#ff4a00;
-			color:#ffffff;
-		*/	color:#ff4a00;
+		.photo-credit {
+			padding: 9px 18px 9px 18px;
+			color:#7F7F7F;
 			font-family: Helvetica, Arial, sans-serif;
-			letter-spacing: 1.5px;
+			font-size:10px; 
+			line-height:12px;
+			letter-spacing: 1px;
 			text-transform:uppercase;
-			line-height:28px;
-			font-style:normal;
-			font-size:20px;
-			font-weight: 800;
+		}
+		.header1 {
+			padding: 9px 0px 9px 0px;
+			color:#00529b;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:32px; 
+			line-height:38px;
 		}
 		.header2 {
 			padding: 9px 0px 9px 0px;
 			color:#00529b;
 			font-family:Helvetica, Arial, sans-serif;
-			font-size:20px; 
-			line-height:26px;
+			font-size:22px; 
+			line-height:28px;
 		}
 		.header3 {
 			padding:27px 0 18px 0;
@@ -83,20 +94,36 @@
 			text-align:center;
 		}
 		.header3 span {
-			border:5px solid #d5d5d5;
+			border:3px solid #d5dbe5;
 			padding: 9px 14px;
 			display:inline-block;
+		}
+		.header4 {
+			padding: 0px 0px 0px 0px;
+			margin: 0px 0px 0px 0px;
+			color:#00529b;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:22px; 
+			line-height:28px;
+		}
+		.hashtag {
+			text-align: left;
+			padding:9px 0 18px 0;
 		}
 		.content {
 			padding: 9px 0px;
 			font-family: Helvetica, Arial, sans-serif; 
-			font-size:14px;
-			line-height:24px;
+			font-size:13px;
+			line-height:21px;
 			color:#404040;	
 		}
 		.content a:link, .content a:active, .content a:visited,
+		.header1 a:link, .header1 a:active, .header1 a:visited,
 		.header2 a:link, .header2 a:active, .header2 a:visited {
-			color:#ff4a00;
+			color:#ff4A00;
+		}
+		.header3 a:link, .header3 a:active, .header3 a:visited {
+			color:#00529b;
 		}
 		.column-content {
 			width:265px;
@@ -118,12 +145,14 @@
 			border-radius: 5px; 
 			-webkit-border-radius: 5px; 
 			-moz-border-radius: 5px; 
-			background-color: #ff4a00; 
-			border-top: 16px solid #ff4a00; 
-			border-bottom: 16px solid #ff4a00; 
-			border-right: 18px solid #ff4a00; 
-			border-left: 18px solid #ff4a00; 
+			background-color: #ff4A00; 
+			border-top: 16px solid #ff4A00; 
+			border-bottom: 16px solid #ff4A00; 
+			border-right: 18px solid #ff4A00; 
+			border-left: 18px solid #ff4A00; 
 			display: inline-block;
+			white-space: nowrap;
+
 		}
 		.footer {
 			padding: 18px 18px 9px 18px; 
@@ -138,7 +167,7 @@
 			text-transform:uppercase;
 		}
 		.footer-content a:link, .footer-content a:visited {
-			color:#ff4a00;
+			color:#ff4A00;
 		}
 		.postfooter {
 			padding: 0;
@@ -169,8 +198,8 @@
 				padding-right:0 !important;
 		 	}
 		 	.header2 {
-		 		font-size:16px;
-		 		line-height:22px;
+		 		font-size:18px;
+		 		line-height:24px;
 		 	}
 		 	.column-content {
 				max-width:480px !important;
@@ -197,68 +226,139 @@
 
 	</style>
 </head> 
-<body bgcolor="#d5d5d5" style="margin:0; padding:0;">	
+<body bgcolor="#d5dbe5" style="margin:0; padding:0;">	
 	<table border="0" width="100%" cellpadding="0" cellspacing="0">
 		<tr>
-			<td bgcolor="#d5d5d5">
+			<td bgcolor="#d5dbe5">
 				<table border="0" align="center" cellpadding="0" cellspacing="0" class="container-table">
 					<tr>
-						<td class="preheader" bgcolor="#d5d5d5" align="right">
-							<a href="https://www.eng.ufl.edu/eblasts/manuel/pecase.html" style="color:#7F7F7F;">View this email in your browser &raquo;</a>
+						<td class="preheader" bgcolor="#d5dbe5" align="right">
+							<a href="https://www.eng.ufl.edu/eblasts/summit2016/summit-3-students.html" style="color:#7F7F7F;">View this email in your browser &raquo;</a>
 						</td>
 					</tr>
 					<tr>
 						<td bgcolor="#FFFFFF">
-							<a href="https://www.eng.ufl.edu" title="Herbert Wertheim College of Engineering" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/hwcoe-email-header-official-flat.png" width="600" height="108" align="left" class="header-image" alt="Herbert Wertheim College of Engineering" /></a>
+							<a href="https://www.eng.ufl.edu" title="Herbert Wertheim College of Engineering" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/external/hwcoe-email-header-official-flat.png" width="600" height="108" align="left" class="header-image" alt="Herbert Wertheim College of Engineering" /></a>
 						</td>
 					</tr>
 					<tr>
-						<td>
-							<a href="http://news.ufl.edu/articles/2016/02/president-obama-honors-extraordinary-early-career-scientists.php" title="UF associate professor Michele Manuel receives PECASE award" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/manuel/images/manuel-header.png" align="left" alt="UF associate professor Michele Manuel receives PECASE award" width="600" height="242" class="header-image" /></a>
+						<td bgcolor="#FFFFFF" style="font-family: Helvetica, Arial, sans-serif;">
+							<a href="https://www.eng.ufl.edu/summit2016/" title="Powered to Lead: Transforming the Future as Women" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/summit2016/images/summit2016-eblast-header.png" align="left" alt="Powered to Lead: Transforming the Future as Women" width="600" height="225" class="header-image" /></a>
 						</td>
 					</tr>
+					<tr>
+						<td class="title" bgcolor="#ff4a00" align="center">
+							TUESDAY, MARCH 8, 2016 &bull; J. WAYNE REITZ UNION
+						</td>
+					</tr>
+					
 					<tr>
 						<td class="content-container" bgcolor="#FFFFFF">
 							<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
 								<tr>
+									<td class="header1">
+										We'll see you tomorrow!
+									</td>
+								</tr>
+								<tr>
 									<td class="content">
-										<p><strong>Michele Manuel, an associate professor in the <a href="http://www.mse.ufl.edu/">Department of Materials Science and Engineering</a> (MSE) in UF&rsquo;s Herbert Wertheim College of Engineering,</strong><br /> was named by President Obama on Thursday as a recipient of the Presidential Early Career Awards for Scientists and Engineers, the highest honor bestowed by the United States Government on science and engineering professionals in the early stages of their independent research careers. Manuel is also the recipient of the NSF CAREER, NASA Early Career Faculty, ASM Bradley Stoughton Award for Young Teachers, AVS Recognition for Excellence in Leadership, TMS Early Career Faculty, TMS Young Leaders Professional Development, and TMS/JIM International Scholar awards.</p>
+										<strong>Thank you for registering for the C200 STEM Outreach Event and Leadership Summit!</strong><br />You can look forward to a dynamic discussion with the preeminent women of the <a href="https://www.c200.org">Committee of 200</a> (C200). We'll be talking about the role of women in technology and STEM, how to harness our power to lead the next generation, and the ways in which we can develop innovative solutions for a better society. 
+									</td>
+								</tr>
+								
+								
+								<tr>
+									<td align="center">
+										<table border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td align="center" style="padding-top:10px;padding-bottom:10px;">
+													<a href="https://www.eng.ufl.edu/summit2016/agenda/" target="_blank" class="button">View Agenda</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="content">
+										You can attend any of the panels and keynotes even if you haven't registered for them. If you are registered for the luncheon and can no longer attend, <strong>please <a href="mailto:jenli@eng.ufl.edu">contact us</a></strong> &ndash; this will allow attendees on our waiting list to attend in your place.
+									</td>
+								</tr>
+								<tr>
+									<td class="content">
+										Attire is business casual.
+									</td>
+								</tr>
+								<tr>
+									<td class="content" align="center">
+										<hr size="3" color="#d5dbe5" noshade />
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										
+										<table border="0" cellpadding="0" cellspacing="0" align="left" class="column-content">
+											<tr>
+												<td class="header2">
+													<a href="https://twitter.com/floridaengineer"><img src="https://www.eng.ufl.edu/eblasts/summit2016/images/twitter-icon-left.png" alt="Twitter icon" width="30" height="30" align="left" /></a> Join the conversation 
+												</td>
+											</tr>
+											<tr>
+												<td class="header3 hashtag">
+													<span><a href="https://twitter.com/search?q=%23Powered2Lead">#Powered2Lead</a></span>
+												</td>
+											</tr>
+											<tr>
+												<td class="header3 hashtag">
+													<span><a href="https://twitter.com/search?q=%23C200UF">#C200UF</a></span>
+												</td>
+											</tr>
+										</table>
+										<table border="0" cellpadding="0" cellspacing="0" align="right" class="column-content">
+											<tr>
+												<td class="header2">
+													Interact to win!
+												</td>
+											</tr>
+											<tr>
+												<td class="content">
+													<p>
+														&bull; Tweet <a href="https://twitter.com/search?q=%23Powered2Lead">#Powered2Lead</a> and <a href="https://twitter.com/search?q=%23C200UF">#C200UF</a> for a chance to win prizes: 2 FitBit Charges, 2 Samsung Galaxy Tablets, 2 sets of Beats Headphones.<br />
+														&bull; Complete a raffle ticket and enter a drawing for an Apple Watch.<br></p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="content" align="center">
+										<hr size="3" color="#d5dbe5" noshade />
+									</td>
+								</tr>
+								<tr>
+									<td class="content">
+										<a href="https://www.c200.org/" title="The Committee of 200 (C200)" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/summit2016/images/C200-logo_eblast.png" align="right" alt="C200 Logo" width="260" height="100" class="header-image" /></a>
+										<p> C200 is a membership organization of the world&rsquo;s most successful women entrepreneurs and corporate innovators. C200 has more than 400 members who collectively generate more than $1.4 trillion in annual revenues.</p>
 										
 									</td>
 								</tr>
+								
 								<tr>
-									<td class="content" align="center">
-										<hr size="5" color="#d5d5d5" noshade />
-									</td>
-								</tr>
-								<tr>
-									<td class="header2" align="center">
-										&ldquo;Michele is a visionary. Her extremely creative approach to research has distinguished her as an up-and-coming leader. She is a perfect example of what we refer to as the &rsquo;New Engineer,&lsquo; one who leads innovation across disciplines. She is an inspiration for the next generation of engineers that we are preparing at the college. We’re as proud and excited as ever to support her research here at UF.&rdquo;<br />&ndash;Engineering dean Cammy Abernathy
-									</td>
-								</tr>
-								<tr>
-									<td class="content" align="center">
-										<hr size="5" color="#d5d5d5" noshade />
+									<td class="header3">
+										<span><a href="https://www.eng.ufl.edu/summit2016/">About the UF Engineering Summit</a></span>
 									</td>
 								</tr>
 								<tr>
 									<td class="content">
-										<p><img src="https://www.eng.ufl.edu/eblasts/manuel/images/manuel-portrait.png" width="230" height="288" align="left" class="header-image" alt="Michele Manuel" /> Manuel&rsquo;s research uses a systems-based materials design approach that couples experimental research with theory and mechanistic modeling for the accelerated development of materials. Her current research is focused on the use of systems-level design methods to advance the development of new metallic alloys through microstructure optimization. Of specific interest are lightweight alloys, self-healing metals, shape memory alloys, and materials in extreme environments &ndash; specifically under high magnetic fields or under irradiation. Her work has impact in a wide array of applications including improved performance of biomedical implants and more fuel efficient automobiles.</p>
+										<p>The UF Engineering Summit has been organized annually by the Herbert Wertheim College of Engineering since 2010. Under alternating themes of leadership and innovation, the summit is where engineering alumni, faculty members and students, alongside world-renowned thought leaders, connect and engage to inspire new ways of approaching and solving problems.
 									</td>
 								</tr>
-							
-								<tr>
-									<td class="content">
-										<p>Manuel received her bachelor&rsquo;s degree in materials science and engineering at the University of Florida and a Ph.D. in materials science and engineering at Northwestern University. She worked for the <a href="http://www.nasa.gov/">National Aeronautics and Space Administration (NASA)</a> and <a href="http://www.gm.com/">General Motors Corporation (GM)</a> before joining the faculty in the MSE Department at the University of Florida in January 2008.</p>
-										<p>See the full press release and list of recipients at <a href="https://www.whitehouse.gov/the-press-office/2016/02/18/president-obama-honors-extraordinary-early-career-scientists">whitehouse.gov</a>.</p>
-									</td>
-								</tr>
+								
 								<tr>
 									<td class="content" align="center">
-										<hr size="5" color="#d5d5d5" noshade />
+										<hr size="3" color="#d5dbe5" noshade />
 									</td>
 								</tr>
-							
 								
 							</table>
 						</td>
@@ -294,7 +394,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td class="postfooter" bgcolor="#d5d5d5" align="center">&nbsp;</td>
+						<td class="postfooter" bgcolor="#d5dbe5" align="center">&nbsp;</td>
 					</tr>
 				</table>
 			</td>
