@@ -19,7 +19,6 @@
 			margin: 0px
 		}
 		td {
-			/*padding:0;*/
 			padding-top:0;
 			padding-left: 0;
 			padding-bottom: 0;
@@ -116,34 +115,43 @@
 			max-width:260px;
 			height:auto;
 		}
-		.ghostbutton, .button {
+		.ghostbutton {
 			font-size: 24px;
 			font-family: Helvetica, Arial, sans-serif; 
 			font-weight: 700;
 			letter-spacing: 1.5px;
 			text-transform:uppercase;
-			text-decoration: none; 
-			display: inline-block;
-			
 			border-top: 3px solid #fA4616; 
 			border-bottom: 3px solid #fA4616; 
 			border-right: 3px solid #fA4616; 
 			border-left: 3px solid #fA4616; 
+			display: inline-block;
+			height:auto;
 		}
 		.ghostbutton td {
-			padding: 15px 16px 12px 16px;
+			padding: 15px 0 12px 16px;
 		}
-		.ghostbutton a {
+		.ghostbutton a:link, .ghostbutton a:visited {
 			color: #fA4616;
 			text-decoration: none;
 		}
 		.button {
-			color: #ffffff; 
+			font-size: 24px;
+			font-family: Helvetica, Arial, sans-serif; 
+			font-weight: 700;
+			letter-spacing: 1.5px;
+			text-transform:uppercase;
 			background-color: #fA4616; 
 			border-top: 16px solid #fA4616; 
 			border-bottom: 16px solid #fA4616; 
 			border-right: 18px solid #fA4616; 
 			border-left: 18px solid #fA4616; 
+			display: inline-block;
+			height:auto;
+		}
+		.button a:link, .button a:visited {
+			color:#ffffff;
+			text-decoration: none;
 		}
 		.footer {
 			padding: 9px 18px; 
@@ -156,6 +164,7 @@
 			line-height:12px;
 			text-transform:uppercase;
 		}
+
 		.footer-content a:link, .footer-content a:visited {
 			color:#ffffff;
 		}
@@ -279,14 +288,17 @@
 									</td>
 								</tr>
 								<tr>
-									<td>
+									<td style="padding-top:10px;">
 										<table width="100%" border="0" cellspacing="0" cellpadding="0">
 											<tr>
 												<td align="center">
 													<table border="0" cellspacing="0" cellpadding="0" class="ghostbutton">
 														<tr>
-															<td align="center" style="padding-top:10px;">
-																<a href="#">Call to Action<img src="https://www.eng.ufl.edu/eblasts/templates/images/arrow-orange.png" width="30" height="30" alt="" align="right" valign="middle" /></a>
+															<td align="center">
+																<a href="#">Large Ghost Button</a>
+															</td>
+															<td width="30" style="padding:5px;" align="right" valign="middle">
+																<a href="#"><img src="https://www.eng.ufl.edu/eblasts/templates/images/arrow-orange.png" width="30" height="30" alt="" align="right" valign="middle" /></a>
 															</td>
 														</tr>
 													</table>
@@ -296,14 +308,17 @@
 									</td>
 								</tr>
 								<tr>
-									<td>
+									<td style="padding-top:20px;">
 										<table width="100%" border="0" cellspacing="0" cellpadding="0">
 											<tr>
 												<td align="center">
-													<table border="0" cellspacing="0" cellpadding="0">
+													<table border="0" cellspacing="0" cellpadding="0" class="button">
 														<tr>
-															<td align="center" style="padding-top:10px;">
-																<a href="#" target="_blank" class="button">Call to Action<img src="https://www.eng.ufl.edu/eblasts/templates/images/arrow-wht.png" width="30" height="30" alt="" align="right" valign="middle" /></a>
+															<td align="center">
+																<a href="#" target="_blank">Call to Action</a>
+															</td>
+															<td width="30" style="padding:5px;" align="right" valign="middle">
+																<a href="#" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/arrow-wht.png" width="30" height="30" alt="" align="right" valign="middle" /></a>
 															</td>
 														</tr>
 													</table>
@@ -357,7 +372,15 @@
 					</tr>
 					<tr>
 						<td class="footer-content" align="center">
-							<a href="http://www.ufengineering.skorfanshop.com/"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-store.png" width="30" height="30" title="Online Store" alt="Online Store" valign="middle" /> Online Store</a>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="35">
+										<a href="http://www.ufengineering.skorfanshop.com/"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-store.png" width="30" height="30" title="Online Store" alt="Online Store" valign="middle" /></a></td>
+									<td>
+										<a href="http://www.ufengineering.skorfanshop.com/">Online Store</a>
+									</td>
+								</tr>
+							</table>
 						</td>
 					</tr>
 					<tr>
