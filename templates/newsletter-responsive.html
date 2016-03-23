@@ -49,6 +49,10 @@
 		.content-container {
 			padding: 18px 18px 18px 18px;
 		}
+		.img {
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:12px; 
+		}
 		.header-image {
 			display:block;
 			margin:0;
@@ -69,17 +73,11 @@
 			text-transform:uppercase;
 		}
 		.header1 {
-			padding:9px 14px 9px 14px;
-			border:5px solid #d5d5d5;
-			background-color:#fA4616;
-			color:#ffffff;
-			font-family: Helvetica, Arial, sans-serif;
-			letter-spacing: 1.5px;
-			text-transform:uppercase;
-			line-height:28px;
-			font-style:normal;
-			font-size:20px;
-			font-weight: 800;
+			padding: 9px 0px 9px 0px;
+			color:#00529b;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:34px; 
+			line-height:40px;
 		}
 		.header2 {
 			padding: 9px 0px 9px 0px;
@@ -90,9 +88,9 @@
 		}
 		.header3 {
 			padding:27px 0 18px 0;
-			color:#00529b;
+			color:#7F7F7F;
 			font-family: Helvetica, Arial, sans-serif;
-			font-size:11px; 
+			font-size:12px; 
 			line-height:12px;
 			font-weight:900;
 			letter-spacing: 2px;
@@ -100,9 +98,12 @@
 			text-align:center;
 		}
 		.header3 span {
-			border:5px solid #d5d5d5;
+			border:3px solid #d5d5d5;
 			padding: 9px 14px;
 			display:inline-block;
+		}
+		.header3 span a {
+			text-decoration: none;
 		}
 		.caption {
 			color: #00529b;
@@ -110,6 +111,14 @@
 			font-size:18px; 
 			line-height:24px;
 			max-width: 240px;
+		}
+		.lead {
+			padding: 9px 0px 0px;
+			font-family: Helvetica, Arial, sans-serif; 
+			font-size:14px;
+			line-height:24px;
+			color:#7F7F7F;	
+			font-style:italic;
 		}
 		.content {
 			padding: 9px 0px;
@@ -136,47 +145,59 @@
 			color: #FFFFFF;
 			padding:9px;
 		}
+	
 		.column-image {
 			display:block;
 			margin-bottom:6px;
 			max-width:260px;
 			height:auto;
 		}
-		.button {
+		.ghostbutton, .button {
 			font-size: 24px;
 			font-family: Helvetica, Arial, sans-serif; 
 			font-weight: 700;
 			letter-spacing: 1.5px;
 			text-transform:uppercase;
-			color: #ffffff; 
 			text-decoration: none; 
-			border-radius: 5px; 
-			-webkit-border-radius: 5px; 
-			-moz-border-radius: 5px; 
+			display: inline-block;
+			
+			border-top: 3px solid #fA4616; 
+			border-bottom: 3px solid #fA4616; 
+			border-right: 3px solid #fA4616; 
+			border-left: 3px solid #fA4616; 
+		}
+		.ghostbutton td {
+			padding: 15px 16px 12px 16px;
+		}
+		.ghostbutton a {
+			color: #fA4616;
+			text-decoration: none;
+		}
+		.button {
+			color: #ffffff; 
 			background-color: #fA4616; 
 			border-top: 16px solid #fA4616; 
 			border-bottom: 16px solid #fA4616; 
 			border-right: 18px solid #fA4616; 
 			border-left: 18px solid #fA4616; 
-			display: inline-block;
 		}
 		.footer {
-			padding: 18px 18px 9px 18px; 
-			background-color: #FFFFFF;
+			padding: 9px 18px; 
 		}
 		.footer-content {
-			color:#00529b;
+			padding: 9px;
+			color:#ffffff;
 			font-family: Helvetica, Arial, sans-serif;
 			font-size:10px; 
 			line-height:12px;
-			letter-spacing: 0.5px;
 			text-transform:uppercase;
 		}
 		.footer-content a:link, .footer-content a:visited {
-			color:#fA4616;
+			color:#ffffff;
 		}
 		.postfooter {
-			padding: 0;
+			border-top: 2px solid #d5d5d5;
+			padding: 18px 0;
 			font-family:Helvetica, Arial, sans-serif;
 			font-size:9px; 
 		}
@@ -221,12 +242,8 @@
 				width:100% !important;
 		 	}
 		 	.footer-content {
-		 		font-size:20px !important;
+		 		font-size:16px !important;
 		 		line-height:24px !important;
-		 		text-align: center;
-		 	} 
-		 	.footer-content a {
-		 		display:block;
 		 	}
 		 }
 
@@ -235,12 +252,10 @@
 <body bgcolor="#d5d5d5" style="margin:0; padding:0;">	
 	<table border="0" width="100%" cellpadding="0" cellspacing="0">
 		<tr>
-			<td bgcolor="#d5d5d5">
+			<td bgcolor="#d5d5d5" align="center">
 				<table border="0" align="center" cellpadding="0" cellspacing="0" class="container-table">
 					<tr>
-						<td class="preheader" bgcolor="#d5d5d5" align="right">
-							<a href="#" style="color:#7F7F7F;">View this email in your browser &raquo;</a>
-						</td>
+						<td class="preheader" bgcolor="#d5d5d5" align="right">&nbsp;</td>
 					</tr>
 					<tr>
 						<td bgcolor="#FFFFFF">
@@ -413,12 +428,12 @@
 										Learn more at <a href="https://www.eng.ufl.edu/transformation/" style="color:#fA4616;">eng.ufl.edu/transformation</a>
 									</td>
 								</tr>
-								<tr>
-									<td class="content" align="center">
-										<hr size="5" color="#d5d5d5" noshade="">
-									</td>
-								</tr>
 							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="footer" bgcolor="#FFFFFF" align="center">
+							<hr size="4" color="#d5d5d5" noshade />
 						</td>
 					</tr>
 					<tr>
@@ -426,34 +441,51 @@
 							<table border="0" cellpadding="0" cellspacing="0" align="left" class="column-content">
 								<tr>
 									<td class="content" valign="top" style="padding-right:20px;">
-										<a href="https://www.eng.ufl.edu" title="Herbert Wertheim College of Engineering" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/external/hwcoe-email-logo.png" width="265" height="63" alt="Herbert Wertheim College of Engineering" class="column-image" /></a>
+										<a href="https://www.eng.ufl.edu" title="Herbert Wertheim College of Engineering" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/hwcoe-email-logo.png" width="265" height="63" alt="Herbert Wertheim College of Engineering" class="column-image" /></a>
 									</td>
 								</tr>
 							</table>
 							<table border="0" cellpadding="0" cellspacing="0" align="right" class="column-content">
 								<tr>
 									<td class="content" valign="top">
-										<a href="https://www.eng.ufl.edu/about/transformation/" title="Powering the New Engineer to Transform the Future" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/external/pne-tf.png" width="265" height="63" align="left" class="column-image" alt="Powering the New Engineer to Transform the Future" /></a>
+										<a href="https://www.eng.ufl.edu/about/transformation/" title="Powering the New Engineer to Transform the Future" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/pne-tf.png" width="265" height="63" align="left" class="column-image" alt="Powering the New Engineer to Transform the Future" /></a>
 									</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="postfooter" bgcolor="#7F7F7F" align="center">
+				<table border="0" align="center" cellpadding="0" cellspacing="0" class="container-table">
 					<tr>
-						<td class="footer" bgcolor="#FFFFFF" align="center">
-							<table border="0" width="100%" cellpadding="0" cellspacing="0">
-								<tr>
-									<td class="footer-content" align="center">
-										<a href="https://www.facebook.com/gatorengineering">Facebook</a> &bull; <a href="https://twitter.com/floridaengineer">Twitter</a> &bull; <a href="https://www.youtube.com/user/gatorengineering">YouTube</a> &bull; <a href="https://www.linkedin.com/grp/home?gid=8412066">LinkedIn</a> &bull; <a href="http://www.ufengineering.skorfanshop.com/">Online Store</a><br />
-										<a href="mailto:tcocherell@eng.ufl.edu">Email to be removed from this list</a>
-									</td>
-								</tr>
-							</table>
+						<td class="footer-content" align="center">
+							<a href="https://www.facebook.com/gatorengineering"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-facebook.png" width="30" height="30" title="Facebook" alt="Facebook" /></a>&nbsp;
+							<a href="https://twitter.com/floridaengineer"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-twitter.png" width="30" height="30" title="Twitter" alt="Twitter" /></a>&nbsp;
+							<a href="https://www.youtube.com/user/gatorengineering"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-youtube.png" width="30" height="30" title="YouTube" alt="YouTube" /></a>&nbsp;
+							<a href="https://www.linkedin.com/grp/home?gid=8412066"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-linkedin.png" width="30" height="30" title="LinkedIn" alt="LinkedIn" /></a>&nbsp;
+							<a href="https://www.instagram.com/gatorengineering/"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-instagram.png" width="30" height="30" title="Instagram" alt="Instagram" /></a>&nbsp;
+							<a href="https://www.flickr.com/photos/gatorengineering/"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-flickr.png" width="30" height="30" title="Flickr" alt="Flickr" /></a>
+							
 						</td>
 					</tr>
 					<tr>
-						<td class="postfooter" bgcolor="#d5d5d5" align="center">&nbsp;</td>
+						<td class="footer-content" align="center">
+							<a href="http://www.ufengineering.skorfanshop.com/"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-store.png" width="30" height="30" title="Online Store" alt="Online Store" valign="middle" /> Online Store</a>
+						</td>
 					</tr>
+					<tr>
+						<td class="footer-content" align="center">
+							<a href="#">View this email in your browser</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="footer-content" align="center">
+							<a href="mailto:tcocherell@eng.ufl.edu">Email to be removed from this list</a>
+						</td>
+					</tr>		
 				</table>
 			</td>
 		</tr>
