@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Herbert Wertheim College of Engineering</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="apple-touch-icon" href="https://www.eng.ufl.edu/wp-content/themes/ufl-template-responsive/apple-touch-icon.png">
-	<link rel="shortcut icon" href="https://www.eng.ufl.edu/wp-content/themes/ufl-template-responsive/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel='apple-touch-icon' href='https://www.eng.ufl.edu/wp-content/themes/ufl-template-responsive/apple-touch-icon.png'>
+	<link rel='shortcut icon' href='https://www.eng.ufl.edu/wp-content/themes/ufl-template-responsive/favicon.ico' />
 
 	<style type="text/css">
 		/* style rules */
@@ -19,7 +19,10 @@
 			margin: 0px
 		}
 		td {
-			padding:0;
+			padding-top:0;
+			padding-left: 0;
+			padding-bottom: 0;
+			padding-right: 0;
 		}
 		.container-table {
 			width: 600px; 
@@ -71,7 +74,6 @@
 			font-weight:900;
 			letter-spacing: 2px;
 			text-transform:uppercase;
-			text-align:center;
 		}
 		.header3 span {
 			border:3px solid #d5d5d5;
@@ -112,34 +114,43 @@
 			max-width:260px;
 			height:auto;
 		}
-		.ghostbutton, .button {
+		.ghostbutton {
 			font-size: 24px;
 			font-family: Helvetica, Arial, sans-serif; 
 			font-weight: 700;
 			letter-spacing: 1.5px;
 			text-transform:uppercase;
-			text-decoration: none; 
-			display: inline-block;
-			
 			border-top: 3px solid #fA4616; 
 			border-bottom: 3px solid #fA4616; 
 			border-right: 3px solid #fA4616; 
 			border-left: 3px solid #fA4616; 
+			display: inline-block;
+			height:auto;
 		}
 		.ghostbutton td {
-			padding: 15px 16px 12px 16px;
+			padding: 15px 0 12px 16px;
 		}
-		.ghostbutton a {
+		.ghostbutton a:link, .ghostbutton a:visited {
 			color: #fA4616;
 			text-decoration: none;
 		}
 		.button {
-			color: #ffffff; 
+			font-size: 24px;
+			font-family: Helvetica, Arial, sans-serif; 
+			font-weight: 700;
+			letter-spacing: 1.5px;
+			text-transform:uppercase;
 			background-color: #fA4616; 
 			border-top: 16px solid #fA4616; 
 			border-bottom: 16px solid #fA4616; 
 			border-right: 18px solid #fA4616; 
 			border-left: 18px solid #fA4616; 
+			display: inline-block;
+			height:auto;
+		}
+		.button a:link, .button a:visited {
+			color:#ffffff;
+			text-decoration: none;
 		}
 		.footer {
 			padding: 9px 18px; 
@@ -212,86 +223,95 @@
 <body bgcolor="#d5d5d5" style="margin:0; padding:0;">	
 	<table border="0" width="100%" cellpadding="0" cellspacing="0">
 		<tr>
-			<td bgcolor="#d5d5d5" align="center" style="padding: 0;">
-				<table border="0" align="center" cellpadding="0" cellspacing="0" class="container-table" style="width: 600px;border-collapse: collapse;">
+			<td bgcolor="#d5d5d5" align="center">
+				<table border="0" width="600" align="center" cellpadding="0" cellspacing="0" class="container-table">
+					<table border="0" align="center" cellpadding="0" cellspacing="0" class="container-table">
 					<tr>
-						<td class="preheader" bgcolor="#d5d5d5" align="right" style="padding: 0;padding-top: 9px;font-family: Helvetica, Arial, sans-serif;font-size: 9px;text-transform: uppercase;">&nbsp;</td>
+						<td class="preheader" bgcolor="#d5d5d5" align="right">&nbsp;</td>
 					</tr>
 					<tr>
-						<td class="img" style="padding: 0;font-family: Helvetica, Arial, sans-serif;font-size: 12px;">
-							<a href="https://www.eng.ufl.edu" title="Herbert Wertheim College of Engineering" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/hwcoe-email-header.png" width="600" height="80" align="left" class="header-image" alt="Herbert Wertheim College of Engineering" style="height: auto;display: block;margin: 0;padding: 0;border: 0;max-width: 600px;vertical-align: bottom;outline: none;text-decoration: none;"></a>
+						<td class="img">
+							<a href="https://www.eng.ufl.edu" title="Herbert Wertheim College of Engineering" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/hwcoe-email-header.png" width="600" height="80" align="left" class="header-image" alt="Herbert Wertheim College of Engineering" /></a>
 						</td>
 					</tr>
 					<tr>
-						<td class="img" style="padding: 0;font-family: Helvetica, Arial, sans-serif;font-size: 12px;">
-							<a href="https://www.eng.ufl.edu/transformation/" title="Powering the New Engineer to Transform the Future" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/header-img.png" align="left" alt="Powering the New Engineer to Transform the Future" width="600" height="303" class="header-image" style="height: auto;display: block;margin: 0;padding: 0;border: 0;max-width: 600px;vertical-align: bottom;outline: none;text-decoration: none;"></a>
+						<td class="img">
+							<a href="https://www.eng.ufl.edu/transformation/" title="Powering the New Engineer to Transform the Future" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/header-img.png" align="left" alt="Powering the New Engineer to Transform the Future" width="600" height="303" class="header-image" /></a>
 						</td>
 					</tr>
 					<tr>
-						<td class="content-container" bgcolor="#FFFFFF" style="padding: 18px 18px 18px 18px;">
+						<td class="content-container" bgcolor="#FFFFFF">
 							<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
 								<tr>
-									<td class="header1" align="center" style="padding: 9px 0px 9px 0px;color: #00529b;font-family: Helvetica, Arial, sans-serif;font-size: 34px;line-height: 40px;">
+									<td class="header1" align="center">
 										This is header text which may extend for two or more lines if it gets long enough
 									</td>
 								</tr>
 								<tr>
-									<td class="lead" align="center" style="padding: 9px 0px 0px;font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 24px;color: #7F7F7F;font-style: italic;">
-										<p style="margin-top: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
+									<td class="lead" align="center">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
 									</td>
 								</tr>
 								<tr>
-									<td class="content" align="center" style="padding: 9px 0px;font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 24px;color: #404040;">
-									<p style="margin-top: 0px;">Lorem ipsum dolor sit amet, <a href="https://www.eng.ufl.edu/" style="color: #fA4616;">consectetur adipiscing elit</a>. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
-									<p style="margin-top: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
+									<td class="header2" align="center">
+										This is level 2 header text which may extend for two or more lines if it gets long enough
 									</td>
 								</tr>
 								<tr>
-									<td class="content" align="center" style="padding: 9px 0px;font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 24px;color: #404040;">
-										<hr size="4" color="#d5d5d5" noshade>
+									<td class="content" align="center">
+									<p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
 									</td>
 								</tr>
-								
-								<!-- 2 column content -->
 								<tr>
-									<td align="center" class="header3" style="padding: 27px 0 18px 0;color: #7F7F7F;font-family: Helvetica, Arial, sans-serif;font-size: 12px;line-height: 12px;font-weight: 900;letter-spacing: 2px;text-transform: uppercase;text-align: center;">
+									<td class="content" align="center">
+										<hr size="4" color="#d5d5d5" noshade />
+									</td>
+								</tr>
+								<tr>
+									<td class="header1" align="center">
 										Featured Stories
 									</td>
 								</tr>
+								<!-- 2 column content -->
+								
 								<tr>
-									<td style="padding: 0;">
-										<table border="0" cellpadding="0" cellspacing="0" align="left" class="column-content" style="width: 265px;">
+									<td>
+										<table border="0" cellpadding="0" cellspacing="0" align="left" class="column-content">
 											<tr>
-												<td class="content" valign="top" style="padding-right: 20px;padding: 9px 0px;font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 24px;color: #404040;">
-													<a href="https://www.eng.ufl.edu/" title="Herbert Wertheim College of Engineering" target="_blank" style="color: #fA4616;"><img src="https://www.eng.ufl.edu/eblasts/templates/images/content-img.png" title="Image title" alt="Image alt text" width="260" height="181" class="column-image" style="height: auto;display: block;margin-bottom: 6px;max-width: 260px;"></a>
-													<a href="#" class="caption" style="color: #fA4616;">Story title will go here and link to the story online</a>
+												<td class="content" valign="top" style="padding-right:20px;">
+													<a href="https://www.eng.ufl.edu/" title="Herbert Wertheim College of Engineering" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/content-img.png" title="Image title" alt="Image alt text" width="260" height="181" class="column-image" /></a>
+													<a href="#" class="caption">Story title will go here and link to the story online</a>
 												</td>
 											</tr>
 										</table>
-										<table border="0" cellpadding="0" cellspacing="0" align="right" class="column-content" style="width: 265px;">
+										<table border="0" cellpadding="0" cellspacing="0" align="right" class="column-content">
 											<tr>
-												<td class="content" valign="top" style="padding: 9px 0px;font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 24px;color: #404040;">
-													<a href="https://www.eng.ufl.edu/" title="Herbert Wertheim College of Engineering" target="_blank" style="color: #fA4616;"><img src="https://www.eng.ufl.edu/eblasts/templates/images/content-img.png" title="Image title" alt="Image alt text" width="260" height="181" class="column-image" style="height: auto;display: block;margin-bottom: 6px;max-width: 260px;"></a>
-													<a href="#" class="caption" style="color: #fA4616;">Link to the story</a>
+												<td class="content" valign="top">
+													<a href="https://www.eng.ufl.edu/" title="Herbert Wertheim College of Engineering" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/content-img.png" title="Image title" alt="Image alt text" width="260" height="181" class="column-image" /></a>
+													<a href="#" class="caption">Link to the story</a>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<td class="header3" align="center" style="padding: 27px 0 18px 0;color: #7F7F7F;font-family: Helvetica, Arial, sans-serif;font-size: 12px;line-height: 12px;font-weight: 900;letter-spacing: 2px;text-transform: uppercase;text-align: center;">
-										<span style="border: 3px solid #d5d5d5;padding: 9px 14px;display: inline-block;"><a href="#" style="text-decoration: none;color: #00529b;">Small Ghost Button<img src="https://www.eng.ufl.edu/eblasts/templates/images/arrow-blue.png" width="14" height="14" valign="middle" alt="" style="height: auto;"></a></span>
+									<td class="header3" align="center">
+										<span><a href="#">Small Ghost Button<img src="https://www.eng.ufl.edu/eblasts/templates/images/arrow-blue.png" width="14" height="14" valign="middle" alt="" /></a></span>
 									</td>
 								</tr>
 								<tr>
-									<td style="padding: 0;">
+									<td style="padding-top:10px;">
 										<table width="100%" border="0" cellspacing="0" cellpadding="0">
 											<tr>
-												<td align="center" style="padding: 0;">
-													<table border="0" cellspacing="0" cellpadding="0" class="ghostbutton" style="font-size: 24px;font-family: Helvetica, Arial, sans-serif;font-weight: 700;letter-spacing: 1.5px;text-transform: uppercase;text-decoration: none;display: inline-block;border-top: 3px solid #fA4616;border-bottom: 3px solid #fA4616;border-right: 3px solid #fA4616;border-left: 3px solid #fA4616;">
+												<td align="center">
+													<table border="0" cellspacing="0" cellpadding="0" class="ghostbutton">
 														<tr>
-															<td style="padding: 15px 16px 12px 16px;">
-																<a href="#" style="color: #fA4616;text-decoration: none;">Call to Action<img src="https://www.eng.ufl.edu/eblasts/templates/images/arrow-orange.png" width="30" height="30" alt="" align="right" valign="middle" style="height: auto;"></a>
+															<td align="center">
+																<a href="#">Large Ghost Button</a>
+															</td>
+															<td width="30" style="padding:5px;" align="right" valign="middle">
+																<a href="#"><img src="https://www.eng.ufl.edu/eblasts/templates/images/arrow-orange.png" width="30" height="30" alt="" align="right" valign="middle" /></a>
 															</td>
 														</tr>
 													</table>
@@ -301,14 +321,17 @@
 									</td>
 								</tr>
 								<tr>
-									<td style="padding: 0;">
+									<td style="padding-top:20px;">
 										<table width="100%" border="0" cellspacing="0" cellpadding="0">
 											<tr>
-												<td align="center" style="padding: 0;">
-													<table border="0" cellspacing="0" cellpadding="0">
+												<td align="center">
+													<table border="0" cellspacing="0" cellpadding="0" class="button">
 														<tr>
-															<td align="center" style="padding-top: 10px;padding: 0;">
-																<a href="#" target="_blank" class="button" style="font-size: 24px;font-family: Helvetica, Arial, sans-serif;font-weight: 700;letter-spacing: 1.5px;text-transform: uppercase;text-decoration: none;display: inline-block;border-top: 16px solid #fA4616;border-bottom: 16px solid #fA4616;border-right: 18px solid #fA4616;border-left: 18px solid #fA4616;color: #ffffff;background-color: #fA4616;">Call to Action<img src="https://www.eng.ufl.edu/eblasts/templates/images/arrow-wht.png" width="30" height="30" alt="" align="right" valign="middle" style="height: auto;"></a>
+															<td align="center">
+																<a href="#" target="_blank">Call to Action</a>
+															</td>
+															<td width="30" style="padding:5px;" align="right" valign="middle">
+																<a href="#" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/arrow-wht.png" width="30" height="30" alt="" align="right" valign="middle" /></a>
 															</td>
 														</tr>
 													</table>
@@ -321,23 +344,23 @@
 						</td>
 					</tr>
 					<tr>
-						<td class="footer" bgcolor="#FFFFFF" align="center" style="padding: 9px 18px;">
-							<hr size="4" color="#d5d5d5" noshade>
+						<td class="footer" bgcolor="#FFFFFF" align="center">
+							<hr size="4" color="#d5d5d5" noshade />
 						</td>
 					</tr>
 					<tr>
-						<td class="footer" bgcolor="#FFFFFF" align="center" style="padding: 9px 18px;">
-							<table border="0" cellpadding="0" cellspacing="0" align="left" class="column-content" style="width: 265px;">
+						<td class="footer" bgcolor="#FFFFFF" align="center">
+							<table border="0" cellpadding="0" cellspacing="0" align="left" class="column-content">
 								<tr>
-									<td class="content" valign="top" style="padding-right: 20px;padding: 9px 0px;font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 24px;color: #404040;">
-										<a href="https://www.eng.ufl.edu" title="Herbert Wertheim College of Engineering" target="_blank" style="color: #fA4616;"><img src="https://www.eng.ufl.edu/eblasts/templates/images/hwcoe-email-logo.png" width="265" height="63" alt="Herbert Wertheim College of Engineering" class="column-image" style="height: auto;display: block;margin-bottom: 6px;max-width: 260px;"></a>
+									<td class="content" valign="top" style="padding-right:20px;">
+										<a href="https://www.eng.ufl.edu" title="Herbert Wertheim College of Engineering" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/hwcoe-email-logo.png" width="265" height="63" alt="Herbert Wertheim College of Engineering" class="column-image" /></a>
 									</td>
 								</tr>
 							</table>
-							<table border="0" cellpadding="0" cellspacing="0" align="right" class="column-content" style="width: 265px;">
+							<table border="0" cellpadding="0" cellspacing="0" align="right" class="column-content">
 								<tr>
-									<td class="content" valign="top" style="padding: 9px 0px;font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 24px;color: #404040;">
-										<a href="https://www.eng.ufl.edu/about/transformation/" title="Powering the New Engineer to Transform the Future" target="_blank" style="color: #fA4616;"><img src="https://www.eng.ufl.edu/eblasts/templates/images/pne-tf.png" width="265" height="63" align="left" class="column-image" alt="Powering the New Engineer to Transform the Future" style="height: auto;display: block;margin-bottom: 6px;max-width: 260px;"></a>
+									<td class="content" valign="top">
+										<a href="https://www.eng.ufl.edu/about/transformation/" title="Powering the New Engineer to Transform the Future" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/templates/images/pne-tf.png" width="265" height="63" align="left" class="column-image" alt="Powering the New Engineer to Transform the Future" /></a>
 									</td>
 								</tr>
 							</table>
@@ -347,32 +370,32 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="postfooter" bgcolor="#7F7F7F" align="center" style="padding: 18px 0;border-top: 2px solid #d5d5d5;font-family: Helvetica, Arial, sans-serif;font-size: 9px;">
-				<table border="0" align="center" cellpadding="0" cellspacing="0" class="container-table" style="width: 600px;border-collapse: collapse;">
+			<td class="postfooter" bgcolor="#7F7F7F" align="center">
+				<table border="0" align="center" cellpadding="0" cellspacing="0" class="container-table">
 					<tr>
-						<td class="footer-content" align="center" style="padding: 9px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 10px;line-height: 12px;text-transform: uppercase;">
-							<a href="https://www.facebook.com/gatorengineering" style="color: #ffffff;"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-facebook.png" width="30" height="30" title="Facebook" alt="Facebook" style="height: auto;"></a>&nbsp;
-							<a href="https://twitter.com/floridaengineer" style="color: #ffffff;"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-twitter.png" width="30" height="30" title="Twitter" alt="Twitter" style="height: auto;"></a>&nbsp;
-							<a href="https://www.youtube.com/user/gatorengineering" style="color: #ffffff;"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-youtube.png" width="30" height="30" title="YouTube" alt="YouTube" style="height: auto;"></a>&nbsp;
-							<a href="https://www.linkedin.com/grp/home?gid=8412066" style="color: #ffffff;"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-linkedin.png" width="30" height="30" title="LinkedIn" alt="LinkedIn" style="height: auto;"></a>&nbsp;
-							<a href="https://www.instagram.com/gatorengineering/" style="color: #ffffff;"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-instagram.png" width="30" height="30" title="Instagram" alt="Instagram" style="height: auto;"></a>&nbsp;
-							<a href="https://www.flickr.com/photos/gatorengineering/" style="color: #ffffff;"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-flickr.png" width="30" height="30" title="Flickr" alt="Flickr" style="height: auto;"></a>
+						<td class="footer-content" align="center">
+							<a href="https://www.facebook.com/gatorengineering"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-facebook.png" width="30" height="30" title="Facebook" alt="Facebook" /></a>&nbsp;
+							<a href="https://twitter.com/floridaengineer"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-twitter.png" width="30" height="30" title="Twitter" alt="Twitter" /></a>&nbsp;
+							<a href="https://www.youtube.com/user/gatorengineering"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-youtube.png" width="30" height="30" title="YouTube" alt="YouTube" /></a>&nbsp;
+							<a href="https://www.linkedin.com/grp/home?gid=8412066"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-linkedin.png" width="30" height="30" title="LinkedIn" alt="LinkedIn" /></a>&nbsp;
+							<a href="https://www.instagram.com/gatorengineering/"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-instagram.png" width="30" height="30" title="Instagram" alt="Instagram" /></a>&nbsp;
+							<a href="https://www.flickr.com/photos/gatorengineering/"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-flickr.png" width="30" height="30" title="Flickr" alt="Flickr" /></a>
 							
 						</td>
 					</tr>
 					<tr>
-						<td class="footer-content" align="center" style="padding: 9px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 10px;line-height: 12px;text-transform: uppercase;">
-							<a href="http://www.ufengineering.skorfanshop.com/" style="color: #ffffff;"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-store.png" width="30" height="30" title="Online Store" alt="Online Store" valign="middle" style="height: auto;"> Online Store</a>
+						<td class="footer-content" align="center">
+							<a href="http://www.ufengineering.skorfanshop.com/"><img src="https://www.eng.ufl.edu/eblasts/templates/images/icon-store.png" width="30" height="30" title="Online Store" alt="Online Store" valign="middle" /> Online Store</a>
 						</td>
 					</tr>
 					<tr>
-						<td class="footer-content" align="center" style="padding: 9px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 10px;line-height: 12px;text-transform: uppercase;">
-							<a href="#" style="color: #ffffff;">View this email in your browser</a>
+						<td class="footer-content" align="center">
+							<a href="#">View this email in your browser</a>
 						</td>
 					</tr>
 					<tr>
-						<td class="footer-content" align="center" style="padding: 9px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 10px;line-height: 12px;text-transform: uppercase;">
-							<a href="mailto:tcocherell@eng.ufl.edu" style="color: #ffffff;">Email to be removed from this list</a>
+						<td class="footer-content" align="center">
+							<a href="mailto:tcocherell@eng.ufl.edu">Email to be removed from this list</a>
 						</td>
 					</tr>		
 				</table>
