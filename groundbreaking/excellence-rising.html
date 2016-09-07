@@ -154,18 +154,26 @@
 			font-family:Helvetica, Arial, sans-serif;
 			font-size:9px; 
 		}
+		a[x-apple-data-detectors] { /* remove blue links for addresses, phone numbers, etc. in IOS */
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
 		/* media queries */
 		@media only screen and (min-width: 601px) { /* Outlook and Apple Mail */
 			.content {width: 600px !important;}
 		}
 
 		 @media only screen and (max-width: 480px){ 
-		 	a {
-		 		padding:6px 0px;
-		 	}
-		 	.container-table {
-		 		max-width: 600px !important;
-		 		width:100% !important;
+			a {
+				padding:6px 0px;
+			}
+			.container-table {
+				max-width: 600px !important;
+				width:100% !important;
 			}
 			.preheader {
 				text-align: center;
@@ -174,26 +182,26 @@
 			.content-container {
 				padding: 18px 32px 18px 32px;
 			}
-		 	.header1 {
-		 		font-size:18px;
-		 		line-height:22px;
-		 	}
-		 	.header2 {
-		 		font-size:16px;
-		 		line-height:22px;
-		 	}
-		 	.content, .lead {
-		 		max-width:600px !important;
+			.header1 {
+				font-size:18px;
+				line-height:22px;
+			}
+			.header2 {
+				font-size:16px;
+				line-height:22px;
+			}
+			.content, .lead {
+				max-width:600px !important;
 				width:100% !important;
 				font-size:16px;
 				line-height:20px;
 				padding-right:0 !important;
-		 	}
-		 	.highlight {
-		 		font-size:16px;
+			}
+			.highlight {
+				font-size:16px;
 				line-height:20px;
-		 	}
-		 	.column-content {
+			}
+			.column-content {
 				max-width:480px !important;
 				width:100% !important;
 			}
@@ -205,15 +213,15 @@
 				max-width:480px !important;
 				width:100% !important;
 			}
-		 	.header-image {
-		 		height:auto !important;
+			.header-image {
+				height:auto !important;
 				max-width:600px !important;
 				width:100% !important;
-		 	}
-		 	.footer-content {
-		 		font-size:16px !important;
-		 		line-height:24px !important;
-		 	}
+			}
+			.footer-content {
+				font-size:16px !important;
+				line-height:24px !important;
+			}
 		 }
 
 	</style>
@@ -228,7 +236,7 @@
 					</tr>
 					<tr>
 						<td class="img" bgcolor="#ebebeb">
-							<a href="https://www.eng.ufl.edu/about/transformation/herbert-wertheim-laboratory-for-engineering-excellence/" title="Save the date - Oct. 6, 2016" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/groundbreaking/images/excellence-rising-header.png" align="left" alt="Save the date: October 6 | Excellence Rising" width="600" height="435" border="0" class="header-image" /></a>
+							<a href="https://www.eng.ufl.edu/about/transformation/herbert-wertheim-laboratory-for-engineering-excellence/" title="Save the date - Oct. 6, 2016" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/groundbreaking/images/excellence-rising-header.png" align="left" alt="Save the date: October 6 | Excellence Rising" width="600" height="520" border="0" class="header-image" /></a>
 						</td>
 					</tr>
 					<tr>
