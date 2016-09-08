@@ -67,22 +67,25 @@
 		}
 		.header2 {
 			padding: 9px 0px;
-			color:#005496;
+			color:#003663;
 			font-family:Helvetica, Arial, sans-serif;
 			font-size:14px; 
 			line-height:22px;
 			font-weight:bold;
 		}
-
+		.lead {
+			padding: 9px 0px 0px 0px;
+			font-family: Helvetica, Arial, sans-serif; 
+			font-size:14px;
+			line-height:22px;
+			color:#005496;	
+		}
 		.content {
 			padding: 0px 0px 9px 0px;
 			font-family: Helvetica, Arial, sans-serif; 
 			font-size:14px;
 			line-height:22px;
 			color:#003663;	
-		}
-		.features {
-			color:#005496;
 		}
 		.highlight {
 			padding: 18px 0px;
@@ -151,18 +154,26 @@
 			font-family:Helvetica, Arial, sans-serif;
 			font-size:9px; 
 		}
+		a[x-apple-data-detectors] { /* remove blue links for addresses, phone numbers, etc. in IOS */
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
 		/* media queries */
 		@media only screen and (min-width: 601px) { /* Outlook and Apple Mail */
 			.content {width: 600px !important;}
 		}
 
 		 @media only screen and (max-width: 480px){ 
-		 	a {
-		 		padding:6px 0px;
-		 	}
-		 	.container-table {
-		 		max-width: 600px !important;
-		 		width:100% !important;
+			a {
+				padding:6px 0px;
+			}
+			.container-table {
+				max-width: 600px !important;
+				width:100% !important;
 			}
 			.preheader {
 				text-align: center;
@@ -171,26 +182,26 @@
 			.content-container {
 				padding: 18px 32px 18px 32px;
 			}
-		 	.header1 {
-		 		font-size:18px;
-		 		line-height:22px;
-		 	}
-		 	.header2 {
-		 		font-size:16px;
-		 		line-height:22px;
-		 	}
-		 	.content, .lead {
-		 		max-width:600px !important;
+			.header1 {
+				font-size:18px;
+				line-height:22px;
+			}
+			.header2 {
+				font-size:16px;
+				line-height:22px;
+			}
+			.content, .lead {
+				max-width:600px !important;
 				width:100% !important;
 				font-size:16px;
 				line-height:20px;
 				padding-right:0 !important;
-		 	}
-		 	.highlight {
-		 		font-size:16px;
+			}
+			.highlight {
+				font-size:16px;
 				line-height:20px;
-		 	}
-		 	.column-content {
+			}
+			.column-content {
 				max-width:480px !important;
 				width:100% !important;
 			}
@@ -202,15 +213,15 @@
 				max-width:480px !important;
 				width:100% !important;
 			}
-		 	.header-image {
-		 		height:auto !important;
+			.header-image {
+				height:auto !important;
 				max-width:600px !important;
 				width:100% !important;
-		 	}
-		 	.footer-content {
-		 		font-size:16px !important;
-		 		line-height:24px !important;
-		 	}
+			}
+			.footer-content {
+				font-size:16px !important;
+				line-height:24px !important;
+			}
 		 }
 
 	</style>
@@ -225,7 +236,7 @@
 					</tr>
 					<tr>
 						<td class="img" bgcolor="#ebebeb">
-							<a href="https://www.eng.ufl.edu/about/transformation/herbert-wertheim-laboratory-for-engineering-excellence/" title="Save the date - Oct. 6, 2016" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/groundbreaking/images/lab-launch-header.png" align="left" alt="Save the date: October 6 | Lab Launch" width="600" height="435" border="0" class="header-image" /></a>
+							<a href="https://www.eng.ufl.edu/about/transformation/herbert-wertheim-laboratory-for-engineering-excellence/" title="Save the date - Oct. 6, 2016" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/groundbreaking/images/excellence-rising-header.png" align="left" alt="Save the date: October 6 | Excellence Rising" width="600" height="520" border="0" class="header-image" /></a>
 						</td>
 					</tr>
 					<tr>
@@ -233,7 +244,17 @@
 							<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
 								<tr>
 									<td class="header1">
-										Designed for engineering excellence, UF&rsquo;s newest facility hails the dawning of a new era.
+										Transformation begins at the heart of the UF campus.
+									</td>
+								</tr>
+								<tr>
+									<td class="lead">
+										The University of Florida&rsquo;s newest addition, the <strong>Herbert Wertheim Laboratory for Engineering Excellence</strong>, will be a home to the public-private partnership that is Powering the New Engineer to Transform the Future! 
+									</td>
+								</tr>
+								<tr>
+									<td class="lead">
+										<strong>Join us</strong> for a celebration of engineering excellence and Florida&rsquo;s emerging role in the global innovation economy. 
 									</td>
 								</tr>
 								<tr>
@@ -248,49 +269,40 @@
 									</td>
 								</tr>
 								
-								<tr>
-									<td class="content">
-										The <strong>Herbert Wertheim Laboratory for Engineering Excellence</strong> will be the flagship building for the Herbert Wertheim College of Engineering &ndash; recognizable around the world as a headquarters for engineering leadership, innovation and interdisciplinary research. 
-									</td>
-								</tr>
-								<tr>
-									<td class="content">
-										Come celebrate the launch of a new building, and a new era. <strong>We are Powering the New Engineer to Transform the Future!</strong>
-									</td>
-								</tr>
+								
 								<tr>
 									<td class="header2">
 										Key features:
 									</td>
 								</tr>
 								<tr>
-									<td class="content features">
-										<strong>Classrooms and tools</strong> to benefit all engineering students, from freshman design labs to team-based learning facilities
+									<td class="content">
+										<strong>Classrooms and tools</strong> to facilitate team-based learning, including freshman design labs
 									</td>
 								</tr>
 								<tr>
-									<td class="content features">
+									<td class="content">
 										Faculty and student <strong>collision spaces</strong> to encourage cross-disciplinary collaboration
 									</td>
 								</tr>
 								<tr>
-									<td class="content features">
+									<td class="content">
 										State-of-the-art <strong>biotech lab</strong> to engineer solutions to overcome cancer, cardiovascular and muscular system disorders, and neurodegenerative diseases
 									</td>
 								</tr>
 								<tr>
-									<td class="content features">
-										<strong>Prototyping labs</strong> to enhance hands-on learning while bringing big ideas to fruition
+									<td class="content">
+										<strong>Prototyping labs</strong> to enhance hands-on learning and help develop big ideas
 									</td>
 								</tr>
 								<tr>
-									<td class="content features">
+									<td class="content">
 										Immersive <strong>telepresence facility</strong> to build 21st century communication and networking skills
 									</td>
 								</tr>
 								<tr>
 									<td class="highlight">
-										Click <a href="https://www.eng.ufl.edu/about/transformation/herbert-wertheim-laboratory-for-engineering-excellence/" target="_blank">here</a> for more information or <a href="mailto:jenli@eng.ufl.edu?subject=Groundbreaking RSVP">here</a> to RSVP
+										Click <a href="https://www.eng.ufl.edu/about/transformation/herbert-wertheim-laboratory-for-engineering-excellence/" target="_blank">here</a> for more information
 									</td>
 								</tr>
 								<tr>
@@ -362,13 +374,12 @@
 					</tr>
 					<tr>
 						<td class="footer-content" align="center">
-							<a href="https://www.eng.ufl.edu/eblasts/groundbreaking/groundbreaking-std.html" target="_blank">View this email in your browser</a>
+							<a href="https://www.eng.ufl.edu/eblasts/groundbreaking/excellence-rising-fss.html" target="_blank">View this email in your browser</a>
 						</td>
 					</tr>
 					<tr>
 						<td class="footer-content" align="center">
-							You are receiving this email because you opted in at <a href="https://www.eng.ufl.edu" target="_blank">our website</a> or because you are affiliated with Herbert Wertheim College of Engineering.<br />
-							<a href="mailto:tcgordon@eng.ufl.edu">Email to be removed from this list</a>
+							You are receiving this email because you are affiliated with Herbert Wertheim College of Engineering.
 						</td>
 					</tr>	
 					<tr>
