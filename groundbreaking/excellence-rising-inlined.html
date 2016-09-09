@@ -154,13 +154,13 @@
 			font-family:Helvetica, Arial, sans-serif;
 			font-size:9px; 
 		}
-		a[x-apple-data-detectors] {
-		    color: inherit !important;
-		    text-decoration: none !important;
-		    font-size: inherit !important;
-		    font-family: inherit !important;
-		    font-weight: inherit !important;
-		    line-height: inherit !important;
+		a[x-apple-data-detectors] { /* remove blue links for addresses, phone numbers, etc. in IOS */
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
 		}
 		/* media queries */
 		@media only screen and (min-width: 601px) { /* Outlook and Apple Mail */
@@ -168,12 +168,12 @@
 		}
 
 		 @media only screen and (max-width: 480px){ 
-		 	a {
-		 		padding:6px 0px;
-		 	}
-		 	.container-table {
-		 		max-width: 600px !important;
-		 		width:100% !important;
+			a {
+				padding:6px 0px;
+			}
+			.container-table {
+				max-width: 600px !important;
+				width:100% !important;
 			}
 			.preheader {
 				text-align: center;
@@ -182,26 +182,26 @@
 			.content-container {
 				padding: 18px 32px 18px 32px;
 			}
-		 	.header1 {
-		 		font-size:18px;
-		 		line-height:22px;
-		 	}
-		 	.header2 {
-		 		font-size:16px;
-		 		line-height:22px;
-		 	}
-		 	.content, .lead {
-		 		max-width:600px !important;
+			.header1 {
+				font-size:18px;
+				line-height:22px;
+			}
+			.header2 {
+				font-size:16px;
+				line-height:22px;
+			}
+			.content, .lead {
+				max-width:600px !important;
 				width:100% !important;
 				font-size:16px;
 				line-height:20px;
 				padding-right:0 !important;
-		 	}
-		 	.highlight {
-		 		font-size:16px;
+			}
+			.highlight {
+				font-size:16px;
 				line-height:20px;
-		 	}
-		 	.column-content {
+			}
+			.column-content {
 				max-width:480px !important;
 				width:100% !important;
 			}
@@ -213,15 +213,15 @@
 				max-width:480px !important;
 				width:100% !important;
 			}
-		 	.header-image {
-		 		height:auto !important;
+			.header-image {
+				height:auto !important;
 				max-width:600px !important;
 				width:100% !important;
-		 	}
-		 	.footer-content {
-		 		font-size:16px !important;
-		 		line-height:24px !important;
-		 	}
+			}
+			.footer-content {
+				font-size:16px !important;
+				line-height:24px !important;
+			}
 		 }
 
 	</style>
@@ -374,21 +374,30 @@
 					</tr>
 					<tr>
 						<td class="footer-content" align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 10px;line-height: 12px;text-transform: uppercase;">
-							<a href="https://www.eng.ufl.edu/eblasts/groundbreaking/excellence-rising.html" target="_blank" style="color: #ffffff;">View this email in your browser</a>
+							<a href="%%view_email_url%%" target="_blank" style="color: #ffffff;">View this email in your browser</a>
 						</td>
 					</tr>
-					<tr>
-						<td class="footer-content" align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 10px;line-height: 12px;text-transform: uppercase;">
-							You are receiving this email because you opted in at <a href="https://www.eng.ufl.edu" target="_blank" style="color: #ffffff;">our website</a> or because you are affiliated with Herbert Wertheim College of Engineering.<br>
-							<a href="mailto:tcgordon@eng.ufl.edu" style="color: #ffffff;">Email to be removed from this list</a>
-						</td>
-					</tr>	
 					<tr>
 						<td class="footer-content" align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 10px;line-height: 12px;text-transform: uppercase;">
 							Herbert Wertheim College of Engineering<br>
 							300 Weil Hall<br>
 							P.O. Box 116550<br>
 							Gainesville, FL 32611-6550
+						</td>
+					</tr>	
+					<!-- <tr>
+						<td class="footer-content" align="center">
+							<p>
+							%%Member_Busname%%<br>
+							%%Member_Addr%%<br>
+							%%Member_City%%, %%Member_State%% %%Member_PostalCode%%
+							</p>
+						</td>
+					</tr> -->
+					<tr>
+						<td class="footer-content" align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 10px;line-height: 12px;text-transform: uppercase;">
+							<p style="margin-top: 0px;">You are receiving this email because you opted in at <a href="https://www.eng.ufl.edu" style="color: #ffffff;">our website</a> or because you are affiliated with Herbert Wertheim College of Engineering.</p>
+							<p style="margin-top: 0px;"><a href="%%subscription_center_url%%" alias="Manage Subscriptions" style="color: #ffffff;">Unsubscribe/manage subscriptions</a> &bull; <a href="%%profile_center_url%%" alias="Manage profile" style="color: #ffffff;">Manage your profile</a></p>
 						</td>
 					</tr>		
 				</table>
