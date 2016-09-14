@@ -154,18 +154,26 @@
 			font-family:Helvetica, Arial, sans-serif;
 			font-size:9px; 
 		}
+		a[x-apple-data-detectors] { /* remove blue links for addresses, phone numbers, etc. in IOS */
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
 		/* media queries */
 		@media only screen and (min-width: 601px) { /* Outlook and Apple Mail */
 			.content {width: 600px !important;}
 		}
 
 		 @media only screen and (max-width: 480px){ 
-		 	a {
-		 		padding:6px 0px;
-		 	}
-		 	.container-table {
-		 		max-width: 600px !important;
-		 		width:100% !important;
+			a {
+				padding:6px 0px;
+			}
+			.container-table {
+				max-width: 600px !important;
+				width:100% !important;
 			}
 			.preheader {
 				text-align: center;
@@ -174,26 +182,26 @@
 			.content-container {
 				padding: 18px 32px 18px 32px;
 			}
-		 	.header1 {
-		 		font-size:18px;
-		 		line-height:22px;
-		 	}
-		 	.header2 {
-		 		font-size:16px;
-		 		line-height:22px;
-		 	}
-		 	.content, .lead {
-		 		max-width:600px !important;
+			.header1 {
+				font-size:18px;
+				line-height:22px;
+			}
+			.header2 {
+				font-size:16px;
+				line-height:22px;
+			}
+			.content, .lead {
+				max-width:600px !important;
 				width:100% !important;
 				font-size:16px;
 				line-height:20px;
 				padding-right:0 !important;
-		 	}
-		 	.highlight {
-		 		font-size:16px;
+			}
+			.highlight {
+				font-size:16px;
 				line-height:20px;
-		 	}
-		 	.column-content {
+			}
+			.column-content {
 				max-width:480px !important;
 				width:100% !important;
 			}
@@ -205,15 +213,15 @@
 				max-width:480px !important;
 				width:100% !important;
 			}
-		 	.header-image {
-		 		height:auto !important;
+			.header-image {
+				height:auto !important;
 				max-width:600px !important;
 				width:100% !important;
-		 	}
-		 	.footer-content {
-		 		font-size:16px !important;
-		 		line-height:24px !important;
-		 	}
+			}
+			.footer-content {
+				font-size:16px !important;
+				line-height:24px !important;
+			}
 		 }
 
 	</style>
@@ -294,7 +302,7 @@
 								</tr>
 								<tr>
 									<td class="highlight" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 18px 0px;color: #fA4616;font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 22px;font-weight: bold;">
-										Click <a href="https://www.eng.ufl.edu/about/transformation/herbert-wertheim-laboratory-for-engineering-excellence/" target="_blank" style="color: #fa4616;">here</a> for more information or <a href="mailto:s.barton@eng.ufl.edu?subject=Groundbreaking RSVP" style="color: #fa4616;">here</a> to RSVP
+										Click <a href="https://www.eng.ufl.edu/about/transformation/herbert-wertheim-laboratory-for-engineering-excellence/" target="_blank" style="color: #fa4616;">here</a> for more information
 									</td>
 								</tr>
 								<tr>
@@ -366,13 +374,12 @@
 					</tr>
 					<tr>
 						<td class="footer-content" align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 10px;line-height: 12px;text-transform: uppercase;">
-							<a href="https://www.eng.ufl.edu/eblasts/groundbreaking/excellence-rising.html" target="_blank" style="color: #ffffff;">View this email in your browser</a>
+							<a href="https://www.eng.ufl.edu/eblasts/groundbreaking/excellence-rising-fss.html" target="_blank" style="color: #ffffff;">View this email in your browser</a>
 						</td>
 					</tr>
 					<tr>
 						<td class="footer-content" align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 10px;line-height: 12px;text-transform: uppercase;">
-							You are receiving this email because you opted in at <a href="https://www.eng.ufl.edu" target="_blank" style="color: #ffffff;">our website</a> or because you are affiliated with Herbert Wertheim College of Engineering.<br>
-							<a href="mailto:tcgordon@eng.ufl.edu" style="color: #ffffff;">Email to be removed from this list</a>
+							You are receiving this email because you are affiliated with Herbert Wertheim College of Engineering.
 						</td>
 					</tr>	
 					<tr>
