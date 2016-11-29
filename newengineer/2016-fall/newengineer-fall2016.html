@@ -52,12 +52,21 @@
 			outline: none;
 			text-decoration: none;
 		}
-		.dateline {
-			padding: 3px 20px;
+		.tagline-tbl {
+			width:400px;
+		}
+		.dateline-tbl {
+			width:90px;
+		}
+		.tagline, .dateline {
+			padding: 5px 20px 5px 5px;
 			font-family:Helvetica, Arial, sans-serif;
 			font-size:12px; 
 			letter-spacing: 1px;
 			color:#FFFFFF;
+		}
+		.tagline {
+			padding: 5px 5px 5px 20px;
 		}
 		.header1 {
 			padding: 9px 0px 18px 0px;
@@ -156,9 +165,6 @@
 		.alert, .alert a:link, .alert a:active, .alert a:visited {
 			color:#fA4616;
 		}
-		.column-content {
-			width:270px;
-		}
 		.column-image {
 			display:block;
 			margin-bottom:6px;
@@ -246,7 +252,10 @@
 		 		font-size:14px;
 		 		line-height:20px;
 		 	}
-		 	.column-content, .left-column-content, .right-column-content {
+		 	.tagline, .dateline {
+		 		text-align:center;
+		 	}
+		 	.tagline-tbl, .dateline-tbl, .left-column-content, .right-column-content {
 				max-width:480px !important;
 				width:100% !important;
 			}
@@ -287,12 +296,24 @@
 					</tr>
 					<!-- dateline - delete if unused -->
 					<tr>
-						<td class="dateline" bgcolor="#FA4616" align="right">
-							Fall 2016
+						<td bgcolor="#FA4616">
+							<table border="0" cellpadding="0" cellspacing="0" align="left" class="tagline-tbl">
+								<tr>
+									<td class="tagline" align="left">
+										News from the Herbert Wertheim College of Engineering
+									</td>
+								</tr>
+							</table>
+							<table border="0" cellpadding="0" cellspacing="0" align="right" class="dateline-tbl">
+								<tr>
+									<td class="dateline" align="right">
+										Fall 2016
+									</td>
+								</tr>
+							</table>
 						</td>
 					</tr>
 					<!-- /dateline -->
-					
 					<tr>
 						<td class="content-container" bgcolor="#ffffff">
 							<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
@@ -312,11 +333,9 @@
 					<tr>
 						<td class="content-container" bgcolor="#FFFFFF" style="padding-top:0px !important;">
 							<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
-							
 								<tr>
 									<td>
 										<table border="0" cellpadding="0" cellspacing="0" align="left" class="left-column-content">
-										
 											<tr>
 												<td class="header3">
 													<span><a href="https://www.eng.ufl.edu/newengineer/research-innovation/">Research &amp; Innovation</a></span>
@@ -386,7 +405,7 @@
 											</tr>
 											<tr>
 												<td class="header4">
-													<a href="" title="" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/newengineer/2016-fall/images/nelms.png" title="" alt="" class="story-image" width="132" height="75" align="left" border="0" />Discover Financial CEO visits campus as Linda Parker Hudson Engineering Leader in Residence</a>
+													<a href="" title="" target="_blank"><img src="https://www.eng.ufl.edu/eblasts/newengineer/2016-fall/images/nelms.png" title="" alt="" class="story-image" width="132" height="99" align="left" border="0" />Discover Financial CEO David Nelms visits campus as Linda Parker Hudson Engineering Leader in Residence</a>
 												</td>
 											</tr>
 											<tr>
