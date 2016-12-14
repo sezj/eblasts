@@ -60,6 +60,10 @@
 			padding: 0;
 			font-family:Helvetica, Arial, sans-serif;
 			font-size:9px; 
+			color:#092f87;
+		}
+		.postfooter a {
+			color:#092f87;
 		}
 		/* media queries */
 
@@ -100,11 +104,27 @@
 						</td>
 					</tr>
 					<tr>
-						<td class="postfooter" bgcolor="#ffffff" align="center" style="padding: 0;font-family: Helvetica, Arial, sans-serif;font-size: 9px;">&nbsp;</td>
+						<td class="postfooter" bgcolor="#ffffff" align="center" style="padding: 0;font-family: Helvetica, Arial, sans-serif;font-size: 9px;color: #092f87;">&nbsp;</td>
 					</tr>
+					<tr>
+					<td class="postfooter" align="center" style="padding: 0;font-family: Helvetica, Arial, sans-serif;font-size: 9px;color: #092f87;">
+						<p style="margin-top: 0px;">
+						%%Member_Busname%%<br>
+						%%Member_Addr%%<br>
+						%%Member_City%%, %%Member_State%% %%Member_PostalCode%%
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="postfooter" align="center" style="padding: 0;font-family: Helvetica, Arial, sans-serif;font-size: 9px;color: #092f87;">
+						<p style="margin-top: 0px;">You are receiving this email because you opted in at <a href="https://www.eng.ufl.edu" style="color: #092f87;text-decoration: none;">our website</a> or because you are affiliated with Herbert Wertheim College of Engineering.</p>
+						<p style="margin-top: 0px;"><a href="%%subscription_center_url%%" alias="Manage Subscriptions" style="text-decoration: none;color: #092f87;">Unsubscribe/manage subscriptions</a> &bull; <a href="%%profile_center_url%%" alias="Manage profile" style="text-decoration: none;color: #092f87;">Manage your profile</a></p>
+					</td>
+				</tr>
 				</table>
 			</td>
 		</tr>
 	</table>
-</body>
+<custom name="opencounter" type="tracking">
+</custom></body>
 </html>
