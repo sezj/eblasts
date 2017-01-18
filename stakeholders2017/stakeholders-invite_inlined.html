@@ -35,7 +35,7 @@
 			text-transform:uppercase;
 		}
 		.content-container {
-			padding: 9px 45px;
+			padding: 18px 45px 18px 45px;
 		}
 		.img {
 			font-family:Helvetica, Arial, sans-serif;
@@ -55,8 +55,8 @@
 			padding: 9px 0px 0px;
 			color:#005496;
 			font-family:Helvetica, Arial, sans-serif;
-			font-size:28px; 
-			line-height:36px;
+			font-size:26px; 
+			line-height:34px;
 		}
 		.header2 {
 			padding: 0px;
@@ -66,11 +66,11 @@
 			line-height:22px;
 			font-weight:bold;
 		}
-		.header3 {
+		.lead {
+			padding: 9px 0px 9px 0px;
 			font-family: Helvetica, Arial, sans-serif; 
-			font-style: italic;
-			font-size:18px;
-			line-height:26px;
+			font-size:20px;
+			line-height:28px;
 			color:#ffffff;	
 		}
 		.content {
@@ -142,6 +142,14 @@
 			font-family:Helvetica, Arial, sans-serif;
 			font-size:9px; 
 		}
+		a[x-apple-data-detectors] { /* remove blue links for addresses, phone numbers, etc. in IOS */
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
 		/* media queries */
 		@media only screen and (min-width: 601px) { /* Outlook and Apple Mail */
 			.content {width: 600px !important;}
@@ -166,11 +174,11 @@
 		 		font-size:18px;
 		 		line-height:22px;
 		 	}
-		 	.header2, .header3 {
+		 	.header2 {
 		 		font-size:16px;
 		 		line-height:22px;
 		 	}
-		 	.content {
+		 	.content, .lead {
 		 		max-width:600px !important;
 				width:100% !important;
 				font-size:16px;
@@ -216,15 +224,15 @@
 					</tr>
 					<tr>
 						<td class="img" bgcolor="#ebebeb" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;font-family: Helvetica, Arial, sans-serif;font-size: 24px;">
-							<a href="https://www.eng.ufl.edu/about/transformation/" title="Powered by You: Herbert Wertheim College of Engineering 2017 Stakeholders Dinner" target="_blank" style="color: #fa4616;"><img src="https://www.eng.ufl.edu/eblasts/stakeholders2017/images/stakeholders-invite-header.png" align="left" alt="Powered by You: Herbert Wertheim College of Engineering 2017 Stakeholders Dinner" width="600" height="325" border="0" class="header-image" style="height: auto;display: block;margin: 0;padding: 0;border: 0;max-width: 600px;vertical-align: bottom;outline: none;text-decoration: none;"></a>
+							<a href="https://www.eng.ufl.edu/news-events/events-calendar/stakeholders-dinner-2017/?utm_source=stakeholders_invite&utm_campaign=stakeholders_2017&utm_medium=email&utm_content=img" title="Powered by You: Herbert Wertheim College of Engineering 2017 Stakeholders Dinner - March 30, 2017" target="_blank" style="color: #fa4616;"><img src="https://www.eng.ufl.edu/eblasts/stakeholders2017/images/stakeholders-invite-header.png" align="left" alt="Powered by You: Herbert Wertheim College of Engineering 2017 Stakeholders Dinner - March 30, 2017" width="600" height="330" border="0" class="header-image" style="height: auto;display: block;margin: 0;padding: 0;border: 0;max-width: 600px;vertical-align: bottom;outline: none;text-decoration: none;"></a>
 						</td>
 					</tr>
 					<tr>
-						<td class="content-container" bgcolor="#e1e1e1" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px 45px;">
+						<td class="content-container" bgcolor="#e1e1e1" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 18px 45px 18px 45px;">
 							<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
 								<tr>
-									<td class="header1" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px 0px 0px;color: #005496;font-family: Helvetica, Arial, sans-serif;font-size: 28px;line-height: 36px;">
-										You are cordially invited to join us in celebrating our momentous year.
+									<td class="header1" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px 0px 0px;color: #005496;font-family: Helvetica, Arial, sans-serif;font-size: 26px;line-height: 34px;">
+										You are cordially invited to join us in celebrating our success.
 									</td>
 								</tr>
 								<tr>
@@ -245,7 +253,7 @@
 													<table border="0" cellspacing="0" cellpadding="0" class="button" style="font-size: 20px;font-family: Helvetica, Arial, sans-serif;font-weight: 700;letter-spacing: 0.5px;text-transform: uppercase;background-color: #fA4616;border-top: 6px solid #fA4616;border-bottom: 6px solid #fA4616;border-right: 18px solid #fA4616;border-left: 18px solid #fA4616;display: inline-block;height: auto;">
 														<tr>
 															<td align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;">
-																<a href="mailto:twind@eng.ufl.edu?subject=Stakeholders Dinner RSVP" style="color: #ffffff;text-decoration: none;">March 30, 2017</a>
+																<a href="https://www.eng.ufl.edu/news-events/events-calendar/stakeholders-dinner-2017/?utm_source=invite_email&utm_campaign=stakeholders_2017&utm_medium=email&utm_content=btn" target="_blank" style="color: #ffffff;text-decoration: none;">RSVP Now &ndash; March 30, 2017</a>
 															</td>
 														</tr>
 													</table>
@@ -262,8 +270,7 @@
 								</tr>
 								<tr>
 									<td class="content" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px 0px 9px 0px;font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 22px;color: #003663;">
-										Kindly RSVP by March 15 to Tara Wind<br>
-										<a href="mailto:twind@eng.ufl.edu?subject=Stakeholders Dinner RSVP" style="color: #fa4616;">twind@eng.ufl.edu</a> or 352-392-6795
+										If you have any questions or require special accommodations, please contact Tara Wind at <a href="mailto:twind@eng.ufl.edu?subject=Stakeholders Dinner" style="color: #fa4616;">twind@eng.ufl.edu</a> or 352-392-6795.
 									</td>
 								</tr>
 								
@@ -272,27 +279,22 @@
 					</tr>
 					<tr>
 						<td class="img" bgcolor="#e1e1e1" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;font-family: Helvetica, Arial, sans-serif;font-size: 24px;">
-							<img src="https://www.eng.ufl.edu/eblasts/stakeholders2017/images/stakeholders-invite-footer2.png" align="left" alt="Surpassing standards and charting new territory, with unprecedented talent and unparalleled drive for excellence. This is how we transform the future – powered by you." width="600" height="140" border="0" class="header-image" style="height: auto;display: block;margin: 0;padding: 0;border: 0;max-width: 600px;vertical-align: bottom;outline: none;text-decoration: none;">
+							<a href="https://www.eng.ufl.edu/about/transformation/?utm_source=stakeholders_invite&utm_campaign=stakeholders_2017&utm_medium=email&utm_content=footer_banner" title="Powered by You: Herbert Wertheim College of Engineering 2017 Stakeholders Dinner - March 30, 2017" target="_blank" style="color: #fa4616;"><img src="https://www.eng.ufl.edu/eblasts/stakeholders2017/images/stakeholders-invite-footer.png" align="left" alt="Surpassing standards and charting new territory, with unprecedented talent and unparalleled drive for excellence. This is how we transform the future – powered by you." width="600" height="260" border="0" class="header-image" style="height: auto;display: block;margin: 0;padding: 0;border: 0;max-width: 600px;vertical-align: bottom;outline: none;text-decoration: none;"></a>
 						</td>
 					</tr>
 					<tr>
-						<td class="header3 content-container" bgcolor="#005496" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px 45px;font-family: Helvetica, Arial, sans-serif;font-style: italic;font-size: 18px;line-height: 26px;color: #ffffff;">
-							Surpassing standards and charting new territory, with unprecedented talent and unparalleled drive for excellence. This is how we transform the future – powered by you.
-						</td>
-					</tr>
-					<tr>
-						<td class="footer" bgcolor="#005496" align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 18px 18px 9px 18px;color: #003663;font-family: Helvetica, Arial, sans-serif;">
+						<td class="footer" bgcolor="#0d4583" align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 18px 18px 9px 18px;color: #003663;font-family: Helvetica, Arial, sans-serif;">
 							<table border="0" cellpadding="0" cellspacing="0" align="left" class="column-content" style="width: 265px;">
 								<tr>
 									<td class="content" valign="top" style="padding-right: 20px;padding-top: 0;padding-left: 0;padding-bottom: 0;padding: 9px 0px 9px 0px;font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 22px;color: #003663;">
-										<a href="https://www.eng.ufl.edu" title="Herbert Wertheim College of Engineering" target="_blank" style="color: #fa4616;"><img src="https://www.eng.ufl.edu/eblasts/stakeholders2017/images/hwcoe-logo.png" width="265" height="63" border="0" alt="Herbert Wertheim College of Engineering" class="column-image" style="height: auto;display: block;margin-bottom: 6px;max-width: 260px;"></a>
+										<a href="https://www.eng.ufl.edu?utm_source=stakeholders_invite&utm_campaign=stakeholders_2017&utm_medium=email" title="Herbert Wertheim College of Engineering" target="_blank" style="color: #fa4616;"><img src="https://www.eng.ufl.edu/eblasts/stakeholders2017/images/hwcoe-logo.png" width="265" height="63" border="0" alt="Herbert Wertheim College of Engineering" class="column-image" style="height: auto;display: block;margin-bottom: 6px;max-width: 260px;"></a>
 									</td>
 								</tr>
 							</table>
 							<table border="0" cellpadding="0" cellspacing="0" align="right" class="column-content" style="width: 265px;">
 								<tr>
 									<td class="content" valign="top" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px 0px 9px 0px;font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 22px;color: #003663;">
-										<a href="https://www.eng.ufl.edu/about/transformation/" title="Powering the New Engineer to Transform the Future" target="_blank" style="color: #fa4616;"><img src="https://www.eng.ufl.edu/eblasts/stakeholders2017/images/pne-tf.png" width="265" height="63" border="0" align="left" class="column-image" alt="Powering the New Engineer to Transform the Future" style="height: auto;display: block;margin-bottom: 6px;max-width: 260px;"></a>
+										<a href="https://www.eng.ufl.edu/about/transformation/?utm_source=stakeholders_invite&utm_campaign=stakeholders_2017&utm_medium=email" title="Powering the New Engineer to Transform the Future" target="_blank" style="color: #fa4616;"><img src="https://www.eng.ufl.edu/eblasts/stakeholders2017/images/pne-tf.png" width="265" height="63" border="0" align="left" class="column-image" alt="Powering the New Engineer to Transform the Future" style="height: auto;display: block;margin-bottom: 6px;max-width: 260px;"></a>
 									</td>
 								</tr>
 							</table>
@@ -302,7 +304,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="postfooter" bgcolor="#0d4583" align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 18px 0;font-family: Helvetica, Arial, sans-serif;font-size: 9px;">
+			<td class="postfooter" bgcolor="#005496" align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 18px 0;font-family: Helvetica, Arial, sans-serif;font-size: 9px;">
 				<table width="600" border="0" align="center" cellpadding="0" cellspacing="0" class="container-table" style="width: 600px;border-collapse: collapse;">
 					<tr>
 						<td class="footer-content" align="center" style="padding-top: 0;padding-left: 0;padding-bottom: 0;padding-right: 0;padding: 9px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 10px;line-height: 12px;text-transform: uppercase;">
